@@ -15,6 +15,8 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+set :css_dir, 'stylesheets'
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
