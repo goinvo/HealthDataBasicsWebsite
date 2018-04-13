@@ -15,6 +15,9 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+
+::Sass.load_paths << File.join(root, "node_modules")
+
 set :css_dir, 'stylesheets'
 
 # With alternative layout
