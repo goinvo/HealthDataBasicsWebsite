@@ -1,1 +1,64 @@
 
+//media query size
+$break-medium: 768px;
+
+// color
+$lightest-neutral-color: #EFF1F8;
+$light-neutral-color: #F5F7FA;
+$contrast-neutral-color: #FFF7E8;
+$dark-color: #2D3346;
+$emphasis-color-strong: #CD4722;
+$emphasis-color-medium: #DE5B34;
+$text-color: #434A53;
+$text-light-color: #F5F7FA;
+
+
+//font
+$font-type: montserrat;
+$medium-weight: 500;
+$regular-weight: 300;
+
+
+
+//mobile base
+
+h1{
+	font-family: $font-type;
+	font-weight:$medium-weight;
+	font-size: 1.76em;
+	color: $emphasis-color-medium;
+}
+
+h2{
+	font-family: $font-type;
+	font-weight: $medium-weight;
+	font-size: 1.25em;
+	color: $emphasis-color-medium;
+}
+
+h3{
+	font-family: $font-type;
+	font-weight: $medium-weight;
+	font-size: 1.0em;
+	color: $text-color;
+}
+
+p{
+ 	font-family: $font-type;
+ 	font-size: 1.0em;
+ 	color: $text-color;
+ 	font-weight: $regular-weight;
+}
+
+//desktop
+h1{
+	font-size: 3.052em;
+}
+
+h2{
+	font-size: 1.76em;
+}
+
+h3{
+	font-size: 1.25em;
+}
