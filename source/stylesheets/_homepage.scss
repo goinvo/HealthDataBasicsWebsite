@@ -1,21 +1,40 @@
 
-body {
-  background-color: #fbc547;
-  color: #333;
-  padding: 18vh 1rem;
+
+body{
+  max-width: 1400px;
+  margin: 0 auto !important;
+  float: none !important;
+}
+.center{
+  margin: 4px;
+}
+
+.light-background{
+  background-color: $light-neutral-color;
+}
+
+.lightest-background{
+  background-color: $lightest-neutral-color;
+}
+
+.dark-color{
+  color: $dark-color;
+}
+
+.text-center-mobile{
   text-align: center;
 }
 
-a {
-  color: rgba(#000, 0.7);
+//desktop view
+@media only screen and (min-width: $break-medium){
 
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
+  .center{
+    margin:auto;
   }
-}
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+  .text-center-mobile{
+    text-align:left;
+  }
+
+
 }

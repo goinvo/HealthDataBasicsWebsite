@@ -1,64 +1,157 @@
 
 //media query size
 $break-medium: 768px;
+$break-small: 370px;
+
 
 // color
-$lightest-neutral-color: #EFF1F8;
-$light-neutral-color: #F5F7FA;
-$contrast-neutral-color: #FFF7E8;
+$lightest-neutral-color: #EFF1F8; 
+$light-neutral-color: #F5F7FA;  
+$contrast-neutral-color: #FFF7E8; 
 $dark-color: #2D3346;
-$emphasis-color-strong: #CD4722;
+$emphasis-color-strong: #CD4722; 
 $emphasis-color-medium: #DE5B34;
-$text-color: #434A53;
-$text-light-color: #F5F7FA;
+$text-color-dark: #374058;
+$text-color-lighter: #454E6D;
+$link-underline: #F39779;
+$visited-link: #4F2478;
+$white: #ffffff;
 
 
 //font
-$font-type: montserrat;
+$font-type: 'Montserrat', Arial;
 $medium-weight: 500;
-$regular-weight: 300;
+$regular-weight: 400;
+$subhead-size: 0.8em;
+$caps_spacing: 0.1em;
 
+
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: $font-type;
+	letter-spacing: .02em;
+	margin:4px;
+}
 
 
 //mobile base
-
 h1{
-	font-family: $font-type;
 	font-weight:$medium-weight;
 	font-size: 1.76em;
 	color: $emphasis-color-medium;
+	line-height: 1.2em;
 }
 
 h2{
-	font-family: $font-type;
 	font-weight: $medium-weight;
 	font-size: 1.25em;
 	color: $emphasis-color-medium;
 }
 
 h3{
-	font-family: $font-type;
 	font-weight: $medium-weight;
 	font-size: 1.0em;
-	color: $text-color;
+	color: $text-color-dark;
+}
+
+
+h6{ // used for footer
+	font-size: $subhead-size;
+	font-weight: $medium-weight;
+	color: $light-neutral-color;
 }
 
 p{
- 	font-family: $font-type;
  	font-size: 1.0em;
- 	color: $text-color;
+ 	color: $text-color-lighter;
  	font-weight: $regular-weight;
+	line-height: 1.4em;
+	margin: auto;
+	text-align: left;
 }
+
+a{
+	text-decoration: none;
+	border-bottom: 0.12em solid $link-underline;
+	//text-decoration: underline;
+}
+
+
+// links in body of text
+a.inline{
+	color: $emphasis-color-medium;
+
+}
+
+//orange stand alone links
+a.primary{
+	color: $emphasis-color-medium;
+	text-transform: uppercase;
+	font-weight: $medium-weight;
+	letter-spacing: $caps_spacing;
+	font-size: $subhead-size;
+}
+
+//grey standalone links 
+a.secondary{
+	color: $text-color-lighter;
+	text-transform: uppercase;
+	font-weight: $medium-weight;
+	letter-spacing: $caps_spacing;
+	font-size: $subhead-size;
+}
+
+a:visited{
+	color: $visited-link;
+}
+
+a:hover{
+	color: $dark-color;
+}
+
+
+.button {
+	background-color: $emphasis-color-medium;
+	text-align: center;
+	font-size: $subhead-size;
+	color: $white;
+	border: none;
+	padding: 4px 16px;
+	border-radius: 8px;
+	text-transform: uppercase;
+	letter-spacing: $caps_spacing;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+
+
+
 
 //desktop
-h1{
-	font-size: 3.052em;
+@media only screen and (min-width: $break-medium){
+	h1{
+		font-size: 2.82em;
+	}
+
+	h2{
+		font-size: 1.76em;
+	}
+
+	h3{
+		font-size: 1.25em;
+	}
 }
 
-h2{
-	font-size: 1.76em;
-}
+//small mobile devices
+@media only screen and (max-width: $break-small){
+	h1{
+		font-size: 1.4em;
+	}
 
-h3{
-	font-size: 1.25em;
 }
