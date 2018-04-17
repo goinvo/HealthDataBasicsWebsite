@@ -1,1 +1,44 @@
+.nav-title{
+	float: left;
+	font-weight: medium;
+	color: $text-color-lighter;
+	font-weight: 600;
+}
 
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+
+
+	position: fixed;
+	top:0;
+	width:100%;
+
+	background-color: white;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+	height: $nav-height;
+
+}
+
+
+li a{
+		display: block; 
+		padding: 1em 1em;
+		text-decoration: none;
+		color: $text-color-lighter;
+		border-bottom: none;
+		font-weight: $regular-weight;
+		font-size: $subhead-size;
+		float: right;
+}
+
+a:hover {
+	color: $emphasis-color-medium;
+	border-bottom: 0.12em solid $link-underline;
+}
+
+.active {
+ 	color: $emphasis_color-medium;
+}

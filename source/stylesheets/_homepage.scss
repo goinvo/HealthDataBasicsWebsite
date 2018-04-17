@@ -6,7 +6,6 @@ body{
   float: none !important;
 }
 .center{
-  margin: 4px;
 }
 
 .light-background{
@@ -25,6 +24,10 @@ body{
   text-align: center;
 }
 
+
+.limit-line-length-short{
+  max-width: 30em;
+}
 //desktop view
 @media only screen and (min-width: $break-medium){
 
@@ -35,6 +38,10 @@ body{
   .text-center-mobile{
     text-align:left;
   }
+
+.limit-line-length-short{
+  float: left;
+}
 
 
 }
