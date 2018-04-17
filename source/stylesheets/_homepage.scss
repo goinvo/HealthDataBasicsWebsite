@@ -28,6 +28,17 @@ body{
 .limit-line-length-short{
   max-width: 30em;
 }
+
+.purple-blob{
+  position: absolute;
+  top:8%;
+  width: 81%;
+}
+
+.image-front{
+  position: relative;
+  z-index: 200;
+}
 //desktop view
 @media only screen and (min-width: $break-medium){
 
@@ -39,9 +50,15 @@ body{
     text-align:left;
   }
 
-.limit-line-length-short{
-  float: left;
-}
+  .limit-line-length-short{
+    float: left;
+  }
+
+  .purple-blob{
+    position: absolute;
+    top:4em;
+    width: 41%;
+  }
 
 
 }
