@@ -1,12 +1,14 @@
 
 
-body{
-  //max-width: 1400px;
+.max-website-width{
+  max-width: 1400px;
+  margin:0 auto;
 }
 
 .full-width{
   width: 100%;
 }
+
 .light-background{
   background-color: $light-neutral-color;
 }
@@ -29,6 +31,10 @@ body{
   margin:auto;
 }
 
+
+.limit-line-length-short{
+  max-width: 40em;
+}
 
 .text-center{
   text-align: center;
@@ -61,6 +67,7 @@ body{
   z-index: 200;
 }
 */
+
 //desktop view
 @media only screen and (min-width: $break-medium){
 
@@ -78,15 +85,15 @@ body{
   }
 
   .columns{
-  display: flex;
-  height: 100%;
-}
+    display: flex;
+    height: 100%;
+  }
 
-.column{
-  flex-grow: 1;
-  align-items: stretch;
+  .column{
+    flex-grow: 1;
+    align-items: stretch;
+  }
 
-}
 /* 
 for non-video version
 

@@ -1,12 +1,13 @@
 
 //media query size
+$break-large: 960px;
 $break-medium: 768px;
 $break-small: 370px;
 
 
 // color
-$lightest-neutral-color: #EFF1F8; 
-$light-neutral-color: #F5F7FA;  
+$lightest-neutral-color: #F5F7FA; 
+$light-neutral-color: #EFF1F8;  
 $contrast-neutral-color: #FFF3EF; 
 $dark-color: #2D3346;
 $emphasis-color-strong: #CD4722; 
@@ -138,16 +139,17 @@ a:hover{
 }
 
 
-.button {
+a.button {
 	background-color: $emphasis-color-medium;
 	text-align: center;
 	font-size: $subhead-size;
 	color: $white;
 	border: none;
-	padding: 4px 16px;
-	border-radius: 8px;
+	padding: .25em .75em;
+	border-radius: .75em;
 	text-transform: uppercase;
 	letter-spacing: $caps-spacing;
+	font-size: $subhead-size;
 }
 
 img{
@@ -158,18 +160,26 @@ img{
 
 
 
-//desktop
+//medium
 @media only screen and (min-width: $break-medium){
 	h1{
-		font-size: 2.403em;
+		font-size: 1.60em;
 	}
 
 	h2{
-		font-size: 1.5em;
+		font-size: 1.25em;
 	}
 
 	h3{
 		font-size: 1.25em;
+	}
+}
+
+
+//large
+@media only screen and (min-width: $break-large){
+	h1{
+		font-size: 2.403em;
 	}
 }
 
