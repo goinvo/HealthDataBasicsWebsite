@@ -32,16 +32,11 @@
 }
 
 
-.limit-line-length-short{
-  max-width: 40em;
-}
-
 .text-center{
   text-align: center;
 }
-.section-break{
-  text-align:center;
-}
+
+
 
 .image-container{
   height: 25em;
@@ -80,19 +75,7 @@
     text-align:left;
   }
 
-  .limit-line-length-short{
-    float: left;
-  }
 
-  .columns{
-    display: flex;
-    height: 100%;
-  }
-
-  .column{
-    flex-grow: 1;
-    align-items: stretch;
-  }
 
 /* 
 for non-video version
