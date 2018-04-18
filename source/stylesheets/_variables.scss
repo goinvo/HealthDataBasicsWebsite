@@ -7,7 +7,7 @@ $break-small: 370px;
 // color
 $lightest-neutral-color: #EFF1F8; 
 $light-neutral-color: #F5F7FA;  
-$contrast-neutral-color: #FFF7E8; 
+$contrast-neutral-color: #FFF3EF; 
 $dark-color: #2D3346;
 $emphasis-color-strong: #CD4722; 
 $emphasis-color-medium: #DE5B34;
@@ -18,6 +18,7 @@ $visited-link: #4F2478;
 $white: #ffffff;
 
 
+
 //font
 $font-type: 'Montserrat', Arial;
 $medium-weight: 500;
@@ -25,8 +26,12 @@ $regular-weight: 400;
 $subhead-size: 0.8em;
 $caps-spacing: 0.1em;
 
-
-$nav-height: 2.5em;
+$text-margin: .5rem;
+$text-padding: .5rem;
+$nav-height: 2.5rem;
+$section-padding: 2em;
+$medium-padding: 1em;
+$line-limit: 40em;
 
 
 
@@ -35,35 +40,50 @@ $nav-height: 2.5em;
 	padding: 0;
 	font-family: $font-type;
 	letter-spacing: .02em;
-	//overflow: hidden;
+}
+
+
+.text-spacing{
+	margin-left: $text-margin;
+	margin-right: $text-margin;
+	padding-left: $text-padding;
+	padding-right: $text-padding;
 }
 
 
 //mobile base
 h1{
-	font-weight:$medium-weight;
+	@extend .text-spacing; 
+	font-weight: $medium-weight;
 	font-size: 1.76em;
 	color: $emphasis-color-medium;
 	line-height: 1.2em;
+
 }
 
 h2{
+	@extend .text-spacing; 
 	font-weight: $medium-weight;
 	font-size: 1.25em;
 	color: $emphasis-color-medium;
+	padding-top: $medium-padding;
+
 }
 
 h3{
+	@extend .text-spacing; 
+	padding-top: $medium-padding;
 	font-weight: $medium-weight;
 	font-size: 1.0em;
 	color: $text-color-dark;
+
 }
-
-
 h6{ // used for footer
 	font-size: $subhead-size;
 	font-weight: $medium-weight;
 	color: $light-neutral-color;
+	margin: $text-margin;
+	padding: $text-padding;
 }
 
 p{
@@ -71,9 +91,12 @@ p{
  	color: $text-color-lighter;
  	font-weight: $regular-weight;
 	line-height: 1.4em;
-	margin: auto;
-	text-align: left;
+	margin-left: $text-margin;
+	margin-right: $text-margin;
+	padding: $text-padding;
+	max-width: $line-limit;
 }
+
 
 a{
 	text-decoration: none;
@@ -138,11 +161,11 @@ img{
 //desktop
 @media only screen and (min-width: $break-medium){
 	h1{
-		font-size: 2.43em;
+		font-size: 2.403em;
 	}
 
 	h2{
-		font-size: 1.76em;
+		font-size: 1.5em;
 	}
 
 	h3{

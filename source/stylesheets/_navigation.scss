@@ -9,7 +9,7 @@ ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	//overflow: hidden;
 
 
 	position: fixed;
@@ -25,6 +25,7 @@ ul{
 
 li a{
 		display: block; 
+		box-sizing: border-box;
 		padding: 1em 1em;
 		text-decoration: none;
 		color: $text-color-lighter;
@@ -34,8 +35,9 @@ li a{
 		float: right;
 }
 
-a:hover {
+.on-hover:hover {
 	color: $emphasis-color-medium;
+	background-color: $light-neutral-color;
 	border-bottom: 0.12em solid $link-underline;
 }
 

@@ -1,13 +1,12 @@
 
 
 body{
-  max-width: 1400px;
-  margin: 0 auto !important;
-  float: none !important;
-}
-.center{
+  //max-width: 1400px;
 }
 
+.full-width{
+  width: 100%;
+}
 .light-background{
   background-color: $light-neutral-color;
 }
@@ -20,15 +19,37 @@ body{
   color: $dark-color;
 }
 
+.contrast-background{
+ background-color: $contrast-neutral-color;
+}
+
+//sets text centered on mobile, left aligned on desktop 
 .text-center-mobile{
   text-align: center;
+  margin:auto;
 }
 
 
-.limit-line-length-short{
-  max-width: 30em;
+.text-center{
+  text-align: center;
+}
+.section-break{
+  text-align:center;
 }
 
+.image-container{
+  height: 25em;
+  width:auto;
+}
+.center-object{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*
+// for non-video version 
 .purple-blob{
   position: absolute;
   top:8%;
@@ -39,11 +60,13 @@ body{
   position: relative;
   z-index: 200;
 }
+*/
 //desktop view
 @media only screen and (min-width: $break-medium){
 
   .center{
     margin:auto;
+    width:100%
   }
 
   .text-center-mobile{
@@ -54,11 +77,24 @@ body{
     float: left;
   }
 
+  .columns{
+  display: flex;
+  height: 100%;
+}
+
+.column{
+  flex-grow: 1;
+  align-items: stretch;
+
+}
+/* 
+for non-video version
+
   .purple-blob{
     position: absolute;
     top:4em;
     width: 41%;
   }
-
+*/
 
 }
