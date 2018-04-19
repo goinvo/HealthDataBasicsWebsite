@@ -1,7 +1,7 @@
 .nav-title{
 	font-weight: medium;
 	color: $text-color-lighter;
-	font-weight: 600;
+	font-weight: $medium-weight;
 	border-bottom: none;
 	padding: 1em;
 }
@@ -23,21 +23,16 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
     border-bottom: none;
-    font-size: $subhead-size;
 }
 
-a:hover {
-	background-color: $light-neutral-color;
-}
 
 .active {
  	color: $emphasis_color-medium;
 }
 
 .header-shadow{
-	box-shadow: 0 .2em #D3D3D3;
+	box-shadow: 0 .1em .2em #E8E8E8;
 }
-
 /*
 .align-item-parent{
 	 height: 2.5em; // nav bar height
@@ -47,12 +42,23 @@ a:hover {
 
 }
 */
+
+// moves orange button into upper nav bar on mobile
+.position-button{
+	position: absolute;
+	top: .8em;
+	right: $medium-padding;
+	}
+
+
+// Aligns nav right when in desktop. Centers  nav in mobile
 .align-nav-right{
 	 display:flex;
 	 align-items: center;
 	 justify-content: center;
 }
 
+// Aligns title left when in desktop or very small screen sizes. Centers in mid range sizes
 .align-title-left{
 	 display:flex;
 	 align-items: center;
@@ -60,22 +66,54 @@ a:hover {
 }
 
 
+.line{
+	height: .1em;
+	width: 20em;
+	background-color:#D3D3D3;
+	position: absolute; 
+	left: 0;
+	right: 0;
+	top: 2.4em;
+	margin: auto
+}
+
+@media only screen and (max-width: $break-small) {
+
+	// align title to left on very small screen
+	.align-title-left{
+	 display:flex;
+	 align-items: center;
+	 justify-content: flex-start;
+	}
+
+}
+
 
 @media only screen and (min-width: $break-medium){
 
+	.positon-button{
+		position: static;
+		top: 0;
+		right: 0;
+
+	}
+
+	.line{
+		visibility: hidden;
+	}
+
 	.align-title-left{
-	 	justify-content: flex-start;
-}
+		 justify-content: flex-start;
+	}
+
 
 	.align-nav-right{
 	 justify-content: flex-end;
-}
+	}
 	
+
 	.ul{
 		justify-content: flex-end;
 	}
 
-	li a{
-		font-size: default;
-	}
 }

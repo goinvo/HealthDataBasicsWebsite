@@ -2,7 +2,7 @@
 //media query size
 $break-large: 960px;
 $break-medium: 768px;
-$break-small: 370px;
+$break-small: 380px;
 
 
 // color
@@ -16,7 +16,6 @@ $text-color-dark: #374058;
 $text-color-lighter: #454E6D;
 $link-underline: #F39779;
 $visited-link: #4F2478;
-$white: #ffffff;
 
 
 
@@ -24,14 +23,20 @@ $white: #ffffff;
 $font-type: 'Montserrat', Arial;
 $medium-weight: 500;
 $regular-weight: 400;
-$subhead-size: 0.8em;
-$caps-spacing: 0.1em;
+$subhead-size: 0.85em;
+$caps-spacing: 0.14em;
 
+
+//standard padding 
+$medium-padding: 1rem;
+
+//sums to standard padding
 $text-margin: .5rem;
 $text-padding: .5rem;
-$nav-height: 2.5rem;
-$section-padding: 2em;
-$medium-padding: 1em;
+
+$large-padding: 2rem;
+$section-padding: 2rem;
+
 $line-limit: 40em;
 
 
@@ -43,12 +48,16 @@ $line-limit: 40em;
 	letter-spacing: .02em;
 }
 
-
+// spacings
 .text-spacing{
 	margin-left: $text-margin;
 	margin-right: $text-margin;
 	padding-left: $text-padding;
 	padding-right: $text-padding;
+}
+
+.object-spacing{
+	padding: $medium-padding;
 }
 
 
@@ -100,7 +109,9 @@ p{
 
 
 a{
+	@extend .text-spacing;
 	text-decoration: none;
+	color: $text-color-lighter;
 	border-bottom: 0.12em solid $link-underline;
 	//text-decoration: underline;
 }
@@ -130,27 +141,33 @@ a.secondary{
 	font-size: $subhead-size;
 }
 
-a:visited{
+a:not(.no-visited):visited{
 	color: $visited-link;
 }
 
-a:hover{
-	color: $dark-color;
+//effect doens't apply to "nohover" class
+a:not(.nohover):hover {
+	background-color: $light-neutral-color;
 }
 
 
-a.button {
+.button {
 	background-color: $emphasis-color-medium;
 	text-align: center;
-	font-size: $subhead-size;
-	color: $white;
+	font-style: $regular-weight;
+	color: white;
 	border: none;
-	padding: .25em .75em;
+	padding: .4em .6em;
+	font-size: $subhead-size;
 	border-radius: .75em;
 	text-transform: uppercase;
 	letter-spacing: $caps-spacing;
-	font-size: $subhead-size;
 }
+
+.button:hover{
+	background-color: $emphasis-color-strong;
+}
+
 
 img{
 	width: 100%;
