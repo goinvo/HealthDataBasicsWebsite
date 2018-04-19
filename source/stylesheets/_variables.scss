@@ -1,8 +1,8 @@
 
 //media query size
 $break-large: 960px;
-$break-medium: 768px;
-$break-small: 380px;
+$break-medium: 769px;
+$break-small: 350px;
 
 
 // color
@@ -12,7 +12,7 @@ $contrast-neutral-color: #FFF3EF;
 $dark-color: #2D3346;
 $emphasis-color-strong: #CD4722; 
 $emphasis-color-medium: #DE5B34;
-$text-color-dark: #374058;
+$text-color-dark: #434A53;
 $text-color-lighter: #454E6D;
 $link-underline: #F39779;
 $visited-link: #4F2478;
@@ -21,9 +21,10 @@ $visited-link: #4F2478;
 
 //font
 $font-type: 'Montserrat', Arial;
+$base-font-size: 15px;
 $medium-weight: 500;
 $regular-weight: 400;
-$subhead-size: 0.8em;
+$subhead-size: 0.82em;
 $caps-spacing: 0.14em;
 
 
@@ -45,6 +46,7 @@ $line-limit: 40em;
 	margin: 0;
 	padding: 0;
 	font-family: $font-type;
+	font-size: $base-font-size;
 	letter-spacing: .02em;
 }
 
@@ -58,6 +60,11 @@ $line-limit: 40em;
 
 .object-spacing{
 	padding: $medium-padding;
+}
+
+.section-spacing{
+	padding-top: $large-padding;
+
 }
 
 
@@ -152,15 +159,14 @@ a:not(.nohover):hover {
 
 
 .button {
+	font-weight: $regular-weight;
 	background-color: $emphasis-color-medium;
 	text-align: center;
-	font-style: $regular-weight;
 	color: white;
 	border: none;
-	padding: .4em .6em;
+	padding: .2em .6em;
 	font-size: $subhead-size;
 	border-radius: .75em;
-	text-transform: uppercase;
 	letter-spacing: $caps-spacing;
 }
 

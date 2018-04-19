@@ -3,10 +3,32 @@
 .max-website-width{
   max-width: 1400px;
   margin:0 auto;
+  background-color: white;
 }
 
 .full-width{
   width: 100%;
+  }
+
+
+
+
+
+.video-size{
+  height: 100%;
+
+   @media only screen and (max-width: $break-medium) and (min-width: 475px){
+    height: 75vh;
+
+    }
+
+  }
+  
+
+
+
+.beyond-max-color{
+  background-color: #F8F8F8;
 }
 
 .light-background{
@@ -38,7 +60,7 @@
 
 
 .image-container{
-  height: 25em;
+  height: 20em;
   width:auto;
 }
 .center-object{
@@ -77,8 +99,6 @@
   .text-center-mobile{
     text-align:left;
   }
-
-
 
 /* 
 for non-video version
