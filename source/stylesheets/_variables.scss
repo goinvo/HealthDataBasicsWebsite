@@ -36,7 +36,7 @@ $text-margin: .5rem;
 $text-padding: .5rem;
 
 $large-padding: 2rem;
-$section-padding: 2rem;
+$extra-large-padding: 3rem;
 
 $line-limit: 40em;
 
@@ -63,9 +63,15 @@ $line-limit: 40em;
 }
 
 .section-spacing{
-	padding-top: $large-padding;
+	padding-top: $extra-large-padding;
 
 }
+
+
+.column{
+	padding:0;
+}
+
 
 
 //mobile base
@@ -193,9 +199,6 @@ img{
 		font-size: 1.25em;
 	}
 
-	h3{
-		font-size: 1.25em;
-	}
 }
 
 
