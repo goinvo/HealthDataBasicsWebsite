@@ -13,23 +13,25 @@
   width: 100%;
   }
 
-
 .center-object{
   display:flex;
   justify-content: center;
   align-items: center;
 }
-.full-width-height{
 
-  width: 100%;
+.full-height{
   height: 100%;
 }
 
 .standard-container{
-  @extend .full-width-height;
+  height: 100%;
   @extend .center-object;
 }
 
+
+.hero-spacing{
+  padding-top: $extra-large-padding;
+}
 
 .image-container{
   height: 20em;
@@ -50,13 +52,18 @@
   height: 100%;
 
     // resizes around medium size screen to prevent large video
-   @media only screen and (max-width: $break-medium) and (min-width: 475px){
+   @media only screen and (max-width: $break-medium) and (min-width: $break-medium-small){
     height: 75vh;
     }
   }
   
-  
-
+// wraps links onto new line when multiple links 
+.link-wrap{
+  display:inline-block;
+  float:left;
+  clear:left;
+  margin-bottom: 1em;
+}
 //colors
 
 .beyond-max-color{
@@ -80,6 +87,14 @@
 }
 
 
+@media only screen and (min-width: $break-medium-small){
+  .link-wrap{
+    display:inline;
+    float: none;
+    clear: none;
+    margin-right: $medium-padding; 
+  }
+}
 
 
 //desktop view
@@ -94,5 +109,8 @@
     text-align:left;
   }
 
+  .hero-spacing{
+  padding-top: 0em;
+}
 
 }

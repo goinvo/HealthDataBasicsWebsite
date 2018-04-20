@@ -19,11 +19,13 @@ li {
 li a {
     display: block;
     text-align: center;
-    padding: $medium-padding;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
     text-decoration: none;
     border-bottom: none;
     font-size: $subhead-size;
 }
+
 
 .active {
  	color: $emphasis_color-medium;
@@ -32,10 +34,14 @@ li a {
 .header-shadow{
 	box-shadow: 0 .1em .2em #E8E8E8;
 	width: 100%;
-	height: 104px;
+	height: 5em;
 	property: float;
 	z-index: 200;
 	background-color: white;
+}
+
+.white-text{
+	color:white;
 }
 /*
 .align-item-parent{
@@ -81,6 +87,15 @@ li a {
 	margin: auto
 }
 
+// footer 
+
+.footer-background-color{
+	background-color: $dark-color;
+}
+
+
+
+
 @media only screen and (max-width: $break-small) {
 
 	// align title to left on very small screen
@@ -97,8 +112,12 @@ li a {
 
 	.header-shadow{
 	height: 51px;
-}
+	}
 	
+	li a {
+	 padding: $medium-padding;
+	}
+
 	.position-button{
 		position: static;
 		top: 0;
@@ -124,5 +143,4 @@ li a {
 	.ul{
 		justify-content: flex-end;
 	}
-
 }

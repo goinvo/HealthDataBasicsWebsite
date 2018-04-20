@@ -2,6 +2,7 @@
 //media query size
 $break-large: 960px;
 $break-medium: 769px;
+$break-medium-small: 470px;
 $break-small: 350px;
 
 
@@ -15,8 +16,9 @@ $emphasis-color-medium: #DE5B34;
 $text-color-dark: #434A53;
 $text-color-lighter: #454E6D;
 $link-underline: #F39779;
+$link-color-secondary: #58606C;
 $visited-link: #4F2478;
-
+$footer-title-color: #BDC5DD;
 
 
 //font
@@ -25,20 +27,23 @@ $base-font-size: 15px;
 $medium-weight: 500;
 $regular-weight: 400;
 $subhead-size: 0.82em;
+$footer-text-size: 0.72em;
 $caps-spacing: 0.14em;
 
 
+
 //standard padding 
-$medium-padding: 1rem;
+$small-padding: .5rem;
+$medium-padding: 1rem; // Used for most 
+$large-padding: 2rem;
+$extra-large-padding: 2.5rem;
 
 //sums to standard padding
-$text-margin: .5rem;
-$text-padding: .5rem;
 
-$large-padding: 2rem;
-$extra-large-padding: 3rem;
 
-$line-limit: 40em;
+
+$line-limit-desktop: 40em;
+$line-limit-mobile: 33em;
 
 
 
@@ -47,16 +52,10 @@ $line-limit: 40em;
 	padding: 0;
 	font-family: $font-type;
 	font-size: $base-font-size;
-	letter-spacing: .02em;
+	letter-spacing: .025em;
 }
 
 // spacings
-.text-spacing{
-	margin-left: $text-margin;
-	margin-right: $text-margin;
-	padding-left: $text-padding;
-	padding-right: $text-padding;
-}
 
 .object-spacing{
 	padding: $medium-padding;
@@ -64,19 +63,22 @@ $line-limit: 40em;
 
 .section-spacing{
 	padding-top: $extra-large-padding;
-
 }
 
+.columns{
+	margin:0;
+	padding:0;
 
+}
 .column{
 	padding:0;
+	margin:0;
 }
 
 
 
 //mobile base
 h1{
-	@extend .text-spacing; 
 	font-weight: $medium-weight;
 	font-size: 1.76em;
 	color: $emphasis-color-medium;
@@ -85,16 +87,15 @@ h1{
 }
 
 h2{
-	@extend .text-spacing; 
 	font-weight: $medium-weight;
 	font-size: 1.25em;
 	color: $emphasis-color-medium;
 	padding-top: $medium-padding;
+	line-height: 1.25em;
 
 }
 
 h3{
-	@extend .text-spacing; 
 	padding-top: $medium-padding;
 	font-weight: $medium-weight;
 	font-size: 1.0em;
@@ -104,9 +105,8 @@ h3{
 h6{ // used for footer
 	font-size: $subhead-size;
 	font-weight: $medium-weight;
-	color: $light-neutral-color;
-	margin: $text-margin;
-	padding: $text-padding;
+	color: $footer-title-color;
+	letter-spacing: .075em;
 }
 
 p{
@@ -114,31 +114,26 @@ p{
  	color: $text-color-lighter;
  	font-weight: $regular-weight;
 	line-height: 1.4em;
-	margin-left: $text-margin;
-	margin-right: $text-margin;
-	padding: $text-padding;
-	max-width: $line-limit;
+	max-width: $line-limit-mobile;
+	padding-top: $small-padding;
+	padding-bottom: $small-padding;
 }
 
 
 a{
-	@extend .text-spacing;
 	text-decoration: none;
 	color: $text-color-lighter;
 	border-bottom: 0.12em solid $link-underline;
-	//text-decoration: underline;
 }
-
 
 // links in body of text
 a.inline{
 	color: $emphasis-color-medium;
-
 }
 
 //orange stand alone links
 a.primary{
-	color: $emphasis-color-medium;
+	color: $emphasis-color-strong;
 	text-transform: uppercase;
 	font-weight: $medium-weight;
 	letter-spacing: $caps-spacing;
@@ -147,12 +142,13 @@ a.primary{
 
 //grey standalone links 
 a.secondary{
-	color: $text-color-lighter;
+	color: $link-color-secondary;
 	text-transform: uppercase;
 	font-weight: $medium-weight;
 	letter-spacing: $caps-spacing;
 	font-size: $subhead-size;
 }
+
 
 a:not(.no-visited):visited{
 	color: $visited-link;
@@ -160,7 +156,7 @@ a:not(.no-visited):visited{
 
 //effect doens't apply to "nohover" class
 a:not(.nohover):hover {
-	background-color: $light-neutral-color;
+	border-bottom: 0.12em solid $emphasis-color-strong;
 }
 
 
@@ -188,15 +184,43 @@ img{
 
 
 
+// footer 
+.footer-link{
+	color: white;
+	font-style: $regular-weight;
+	font-size: $footer-text-size; 
+	border-bottom: none;
+	letter-spacing: .1em;
+}
+
+.orange-text{
+		color: $emphasis-color-medium;
+	}
+
+.footer-spacing{
+	padding-top: $medium-padding;
+	padding-bottom: $extra-large-padding;
+}
+
+
 
 //medium
 @media only screen and (min-width: $break-medium){
+
+	.section-spacing{
+	padding-top: 7rem;
+
+	}
+
 	h1{
 		font-size: 1.60em;
 	}
 
 	h2{
 		font-size: 1.25em;
+	}
+	p{
+		max-width: $line-limit-desktop;
 	}
 
 }
