@@ -32,21 +32,21 @@ $caps-spacing: 0.14em;
 $small-padding: .5rem;
 $medium-padding: 1rem; // Used for most 
 $large-padding: 2rem;
-$extra-large-padding: 2.5rem;
+$larger-padding: 2.5rem;
+$extra-large-padding: 5rem;
 
 //line limits
 $line-limit-desktop: 40em;
 $line-limit-mobile: 33em;
+$letter-spacing: 0.025em;
 
 *{
 	margin: 0;
 	padding: 0;
 	font-family: $font-type;
 	font-size: $base-font-size;
-	letter-spacing: .025em;
+	letter-spacing: $letter-spacing;
 }
-
-
 
 //=== fonts ====
 
@@ -62,7 +62,6 @@ h2{
 	font-weight: $medium-weight;
 	font-size: 1.25em;
 	color: $emphasis-color-medium;
-	padding-top: $medium-padding;
 	line-height: 1.25em;
 
 }
@@ -108,9 +107,6 @@ img{
 
 @media only screen and (min-width: $break-medium){
 
-	.section-spacing{
-	padding-top: 7rem;
-	}
 
 	h1{
 		font-size: 1.60em;

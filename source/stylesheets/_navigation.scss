@@ -1,3 +1,5 @@
+
+// ==== main nav =====
 .nav-title{
 	color: $text-color-lighter;
 	font-weight: $medium-weight;
@@ -5,11 +7,9 @@
 	padding: $medium-padding;
 }
 
-
 ul{
 	list-style-type: none;
     @extend .center-object;
-
 }
 
 li {
@@ -69,7 +69,6 @@ li a {
 	 justify-content: center;
 }
 
-
 .line{
 	height: .05em;
 	width: 90vw;
@@ -81,9 +80,8 @@ li a {
 	margin: auto;
 }
 
-a:not(.no-hover):hover{
-	border-bottom: 0.2em solid $emphasis-color-strong;
-}
+
+
 
 .button {
 	font-weight: $regular-weight;
@@ -109,6 +107,11 @@ a.inline{
 	color: $emphasis-color-medium;
 }
  
+
+a:not(.no-hover):hover{
+	border-bottom: 0.2em solid $emphasis-color-strong;
+}
+
  // orange links
 a.primary{ 
 	color: $emphasis-color-strong;
@@ -174,7 +177,7 @@ footer a {
 @media only screen and (min-width: $break-medium){
 
 	.header-shadow{
-	height: 51px;
+		height: 51px;
 	}
 	
 	li a {
@@ -186,7 +189,6 @@ footer a {
 		top: 0;
 		right: 0;
 		margin-right:$medium-padding;
-
 	}
 
 	.line{
@@ -196,7 +198,6 @@ footer a {
 	.align-title-left{
 		 justify-content: flex-start;
 	}
-
 
 	.align-nav-right{
 	 justify-content: flex-end;
