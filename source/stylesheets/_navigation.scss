@@ -1,3 +1,5 @@
+
+// ==== nav bar ==== 
 .nav-title{
 	color: $text-color-lighter;
 	font-weight: $medium-weight;
@@ -5,11 +7,9 @@
 	padding: $medium-padding;
 }
 
-
 ul{
 	list-style-type: none;
     @extend .center-object;
-
 }
 
 li {
@@ -19,18 +19,20 @@ li {
 li a {
     display: block;
     text-align: center;
-    padding-left: 2.3em;
-    padding-right: 2.3em;
+    margin-left: 2.3em;
+    margin-right: 2.3em;
     text-decoration: none;
     border-bottom: none;
     font-size: $subhead-size;
 }
 
-
+// selected navigation bar element 
 .active {
  	color: $emphasis_color-medium;
+ 	font-weight: $medium-weight;
 }
 
+// navigation bar across the top
 .header-shadow{
 	box-shadow: 0 .1em .2em #E8E8E8;
 	width: 100%;
@@ -40,25 +42,12 @@ li a {
 	background-color: white;
 }
 
-.white-text{
-	color:white;
-}
-/*
-.align-item-parent{
-	 height: 2.5em; // nav bar height
-	 display:flex;
-	 align-items: center;
-	 justify-content: center;
-
-}
-*/
-
 // moves orange button into upper nav bar on mobile
 .position-button{
 	position: absolute;
 	top: 1em;
 	right: $medium-padding;
-	}
+}
 
 
 // Aligns nav right when in desktop. Centers  nav in mobile
@@ -87,15 +76,89 @@ li a {
 	margin: auto
 }
 
-// footer 
+
+
+
+
+//==== links =====
+
+// links in body of text
+a.inline{
+	color: $emphasis-color-medium;
+}
+ 
+ // orange links
+a.primary{ 
+	color: $emphasis-color-strong;
+	text-transform: uppercase;
+	font-weight: $medium-weight;
+	letter-spacing: $caps-spacing;
+	font-size: $subhead-size;
+}
+
+a.primary:visited{
+	color: $visited-link;
+}
+
+a.secondary{ // grey links 
+	color: $link-color-secondary;
+	text-transform: uppercase;
+	font-weight: $medium-weight;
+	letter-spacing: $caps-spacing;
+	font-size: $subhead-size;
+}
+
+a.secondary:visited{
+	color: $visited-link;
+}
+
+a:not(.no-hover):hover{
+	border-bottom: 0.2em solid $emphasis-color-strong;
+}
+
+.button {
+	font-weight: $regular-weight;
+	background-color: $emphasis-color-medium;
+	text-align: center;
+	color: white;
+	border: none;
+	padding: .2em .6em;
+	font-size: $subhead-size;
+	border-radius: .75em;
+	letter-spacing: $caps-spacing;
+}
+
+.button:hover{
+	background-color: $emphasis-color-strong;
+}
+
+
+
+// === footer ===
 
 .footer-background-color{
 	background-color: $dark-color;
 }
 
+footer a {
+	color: white;
+	font-style: $regular-weight;
+	font-size: $footer-text-size; 
+	border-bottom: none;
+	letter-spacing: .1em;
+}
+
+.footer-spacing{
+	padding-top: $medium-padding;
+	padding-bottom: $extra-large-padding;
+}
+
+.white-text{
+	color:white;
+}
 
 
-
+// === Media Queries ====
 @media only screen and (max-width: $break-small) {
 
 	// align title to left on very small screen
@@ -115,13 +178,16 @@ li a {
 	}
 	
 	li a {
-	 padding: $medium-padding;
+	 padding-top: $medium-padding;
+	 margin-right: 1.5em;
+	 margin-left: 1.5em
 	}
 
 	.position-button{
 		position: static;
 		top: 0;
-		right: 0;
+		right:0;
+		margin-top: $medium-padding;
 		margin-right:$medium-padding;
 
 	}

@@ -1,26 +1,41 @@
 
 
-//mobile base
+// === spacing and alignment ====
 
-//Sizes
+// limit width of site
 .max-website-width{
   max-width: 1400px;
   margin:0 auto;
   background-color: white;
 }
 
-.full-width{
-  width: 100%;
-  }
 
-.center-object{
-  display:flex;
-  justify-content: center;
-  align-items: center;
+// reset spacing from bulma to 0
+.columns{
+  margin:0;
+  padding:0;
+
+}
+.column{
+  padding:0;
+  margin:0;
 }
 
-.full-height{
-  height: 100%;
+  
+// commonly used spacing for elements
+.object-spacing{
+  padding: $medium-padding;
+}
+
+.section-spacing{
+  padding-top: $extra-large-padding;
+}
+
+
+//containers
+.image-container{
+  height: 20em;
+  width:auto;
 }
 
 .standard-container{
@@ -29,13 +44,23 @@
 }
 
 
-.hero-spacing{
-  padding-top: $extra-large-padding;
+// helpers for spacing
+.full-width{
+  width: 100%;
+  }
+
+.full-height{
+  height: 100%;
 }
 
-.image-container{
-  height: 20em;
-  width:auto;
+.center-object{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-spacing{
+  padding-top: $extra-large-padding;
 }
 
 //sets text centered on mobile, left aligned on desktop 
@@ -56,7 +81,7 @@
     height: 75vh;
     }
   }
-  
+
 // wraps links onto new line when multiple links 
 .link-wrap{
   display:inline-block;
@@ -64,7 +89,11 @@
   clear:left;
   margin-bottom: 1em;
 }
-//colors
+
+
+
+
+//==== Colors ===
 
 .beyond-max-color{
   background-color: #F8F8F8;
@@ -87,6 +116,11 @@
 }
 
 
+
+
+// === Media Queries ====
+
+// medium view
 @media only screen and (min-width: $break-medium-small){
   .link-wrap{
     display:inline;
