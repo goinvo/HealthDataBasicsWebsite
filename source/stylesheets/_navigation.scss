@@ -1,5 +1,3 @@
-
-// ==== nav bar ==== 
 .nav-title{
 	color: $text-color-lighter;
 	font-weight: $medium-weight;
@@ -7,9 +5,11 @@
 	padding: $medium-padding;
 }
 
+
 ul{
 	list-style-type: none;
     @extend .center-object;
+
 }
 
 li {
@@ -19,8 +19,8 @@ li {
 li a {
     display: block;
     text-align: center;
-    margin-left: 2.3em;
-    margin-right: 2.3em;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
     text-decoration: none;
     border-bottom: none;
     font-size: $subhead-size;
@@ -30,9 +30,9 @@ li a {
 .active {
  	color: $emphasis_color-medium;
  	font-weight: $medium-weight;
+
 }
 
-// navigation bar across the top
 .header-shadow{
 	box-shadow: 0 .1em .2em #E8E8E8;
 	width: 100%;
@@ -40,6 +40,11 @@ li a {
 	property: float;
 	z-index: 200;
 	background-color: white;
+	position: relative;
+}
+
+.white-text{
+	color:white;
 }
 
 // moves orange button into upper nav bar on mobile
@@ -47,7 +52,7 @@ li a {
 	position: absolute;
 	top: 1em;
 	right: $medium-padding;
-}
+	}
 
 
 // Aligns nav right when in desktop. Centers  nav in mobile
@@ -73,11 +78,28 @@ li a {
 	left: 0;
 	right: 0;
 	top: 2.85em;
-	margin: auto
+	margin: auto;
 }
 
+a:not(.no-hover):hover{
+	border-bottom: 0.2em solid $emphasis-color-strong;
+}
 
+.button {
+	font-weight: $regular-weight;
+	background-color: $emphasis-color-medium;
+	text-align: center;
+	color: white;
+	border: none;
+	padding: .2em .6em;
+	font-size: $subhead-size;
+	border-radius: .75em;
+	letter-spacing: $caps-spacing;
+}
 
+.button:hover{
+	background-color: $emphasis-color-strong;
+}
 
 
 //==== links =====
@@ -112,25 +134,6 @@ a.secondary:visited{
 	color: $visited-link;
 }
 
-a:not(.no-hover):hover{
-	border-bottom: 0.2em solid $emphasis-color-strong;
-}
-
-.button {
-	font-weight: $regular-weight;
-	background-color: $emphasis-color-medium;
-	text-align: center;
-	color: white;
-	border: none;
-	padding: .2em .6em;
-	font-size: $subhead-size;
-	border-radius: .75em;
-	letter-spacing: $caps-spacing;
-}
-
-.button:hover{
-	background-color: $emphasis-color-strong;
-}
 
 
 
@@ -148,17 +151,14 @@ footer a {
 	letter-spacing: .1em;
 }
 
-.footer-spacing{
-	padding-top: $medium-padding;
-	padding-bottom: $extra-large-padding;
-}
-
 .white-text{
 	color:white;
 }
 
 
-// === Media Queries ====
+
+
+
 @media only screen and (max-width: $break-small) {
 
 	// align title to left on very small screen
@@ -178,16 +178,13 @@ footer a {
 	}
 	
 	li a {
-	 padding-top: $medium-padding;
-	 margin-right: 1.5em;
-	 margin-left: 1.5em
+	 padding: $medium-padding;
 	}
 
 	.position-button{
 		position: static;
 		top: 0;
-		right:0;
-		margin-top: $medium-padding;
+		right: 0;
 		margin-right:$medium-padding;
 
 	}

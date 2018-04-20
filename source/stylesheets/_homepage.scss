@@ -6,7 +6,7 @@
 .max-website-width{
   max-width: 1400px;
   margin:0 auto;
-  background-color: white;
+  position:relative;
 }
 
 
@@ -95,6 +95,10 @@
 
 //==== Colors ===
 
+.white-background-body{
+    background-color: white;
+  }
+
 .beyond-max-color{
   background-color: #F8F8F8;
 }
@@ -145,6 +149,6 @@
 
   .hero-spacing{
   padding-top: 0em;
-}
+  }
 
 }
