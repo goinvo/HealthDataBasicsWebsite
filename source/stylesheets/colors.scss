@@ -1,0 +1,31 @@
+//==== Colors ===
+
+.background{
+  &--white{
+    background-color: white;
+  }
+  &--grey {
+    background-color: #F8F8F8;
+  }
+  &--light {
+    background-color: $light-neutral-color;
+  }
+  &--lightest {
+    background-color: $lightest-neutral-color;
+  }
+  &--contrast {
+    background-color: $contrast-neutral-color;
+  }
+  &--dark{
+    background-color: $dark-color;
+  }
+}
+
+.text-color{
+  &--dark{
+    color: $dark-color;
+  }
+  &--white{
+    color: $white;
+  }
+}

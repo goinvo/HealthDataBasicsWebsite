@@ -1,0 +1,76 @@
+// === spacing and alignment ====
+
+// limit width of site
+.max-website-width {
+  max-width: 1400px;
+  margin:0 auto;
+}
+
+// reset spacing from bulma to 0
+.columns {
+  margin: 0;
+  padding: 0;
+}
+
+.column {
+  padding: 0;
+  margin: 0;
+}
+
+.columns:last-child {
+  margin-bottom: 0;
+}
+
+// commonly used spacing for elements
+.object-spacing {
+  padding: $spacing--medium;
+}
+
+.section-spacing {
+  padding-top: $spacing--extra-large;
+
+  @media only screen and (min-width: $break-medium) {
+    padding-top: $spacing--extra-large;
+  }
+}
+
+
+//containers
+.image-size {
+  height: 20em;
+  width: auto;
+}
+
+.standard-container {
+  @extend .center-children;
+
+  height: 100%;
+}
+
+.icon {
+  width: 4.2em;
+  height: auto;
+}
+
+// helpers for spacing
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.center-children {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-spacing {
+  padding-top: $spacing--large;
+
+  @media only screen and (min-width: $break-medium) {
+    padding-top: 0em;
+  }
+}

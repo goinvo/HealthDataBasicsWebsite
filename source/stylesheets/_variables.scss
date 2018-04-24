@@ -5,6 +5,20 @@ $break-medium: 769px;
 $break-medium-small: 470px;
 $break-small: 350px;
 
+
+//standard padding 
+$spacing--small: .5rem;
+$spacing--medium: 1rem; // Used for most 
+$spacing--large: 2rem;
+$spacing--larger: 2.5rem;
+$spacing--extra-large: 5rem;
+
+//line limits
+$line-limit--desktop: 40em;
+$line-limit--mobile: 33em;
+$letter-spacing: 0.025em;
+
+
 // color
 $lightest-neutral-color: #F5F7FA; 
 $light-neutral-color: #EFF1F8;  
@@ -28,109 +42,5 @@ $font-weight--medium: 500;
 $font-weight--regular: 400;
 $line-spacing--extra: 0.14em;
 
-//standard padding 
-$spacing--small: .5rem;
-$spacing--medium: 1rem; // Used for most 
-$spacing--large: 2rem;
-$spacing--larger: 2.5rem;
-$spacing--extra-large: 5rem;
 
-//line limits
-$line-limit--desktop: 40em;
-$line-limit--mobile: 33em;
-$letter-spacing: 0.025em;
-
-*{
-	margin: 0;
-	padding: 0;
-	font-family: $font-type;
-	font-size: $font-size--base;
-	letter-spacing: $letter-spacing;
-}
-
-//=== fonts ====
-
-h1 {
-	margin: 0;
-	font-weight: $font-weight--medium;
-	font-size: 1.76em;
-	line-height: 1.2em;
-	color: $emphasis-color-medium;
-}
-
-h2 {
-	font-weight: $font-weight--medium;
-	font-size: 1.25em;
-	line-height: 1.25em;
-	color: $emphasis-color-medium;
-}
-
-h3 {
-	padding-top: $spacing--medium;
-	font-weight: $font-weight--medium;
-	font-size: 1.0em;
-	color: $text-color-dark;
-}
-
-h6 { // used for footer
-	font-size: $font-size--caption;
-	font-weight: $font-weight--medium;
-	letter-spacing: .075em;
-	color: $footer-title-color;
-}
-
-p {
- 	max-width: $line-limit--mobile;
- 	padding-top: $spacing--small;
-	padding-bottom: $spacing--small;
- 	font-size: 1.0em;
- 	font-weight: $font-weight--regular;
-	line-height: 1.4em;
-	color: $text-color-lighter;
-}
-
-a {
-	text-decoration: none;
-	border-bottom: 0.12em solid $link-underline-color;
-	color: $text-color-lighter;
-}
-
-img {
-	width: 100%;
-	height: auto;
-}
-
-
-// === Media Queries ====
-
-// very small mobile devices
-@media only screen and (max-width: $break-small){
-	h1 {
-		font-size: 1.4em;
-	}
-}
-
-
-@media only screen and (min-width: $break-medium){
-
-	h1 {
-		font-size: 1.60em;
-	}
-
-	h2 {
-		font-size: 1.25em;
-	}
-
-	p {
-		max-width: $line-limit--desktop;
-	}
-}
-
-
-//large
-@media only screen and (min-width: $break-large){
-	h1 {
-		font-size: 2.403em;
-	}
-}
 
