@@ -1,0 +1,210 @@
+
+// ==== main nav =====
+.nav-title{
+	color: $text-color-lighter;
+	font-weight: $medium-weight;
+	border-bottom: none;
+	padding: $medium-padding;
+}
+
+ul{
+	list-style-type: none;
+    @extend .center-object;
+}
+
+li {
+	float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
+    text-decoration: none;
+    border-bottom: none;
+    font-size: $subhead-size;
+}
+
+// selected navigation bar element 
+.active {
+ 	color: $emphasis_color-medium;
+ 	font-weight: $medium-weight;
+
+}
+
+.header-shadow{
+	box-shadow: 0 .1em .2em #E8E8E8;
+	width: 100%;
+	height: 5em;
+	property: float;
+	z-index: 200;
+	background-color: white;
+	position: relative;
+}
+
+.white-text{
+	color:white;
+}
+
+// moves orange button into upper nav bar on mobile
+.position-button{
+	position: absolute;
+	top: 1em;
+	right: $medium-padding;
+	}
+
+
+// Aligns nav right when in desktop. Centers  nav in mobile
+.align-nav-right{
+	 display:flex;
+	 align-items: center;
+	 justify-content: center;
+}
+
+// Aligns title left when in desktop or very small screen sizes. Centers in mid range sizes
+.align-title-left{
+	 display:flex;
+	 align-items: center;
+	 justify-content: center;
+}
+
+.line{
+	height: .05em;
+	width: 90vw;
+	background-color:#D3D3D3;
+	position: absolute; 
+	left: 0;
+	right: 0;
+	top: 2.85em;
+	margin: auto;
+}
+
+
+
+
+.button {
+	font-weight: $regular-weight;
+	background-color: $emphasis-color-medium;
+	text-align: center;
+	color: white;
+	border: none;
+	padding: .3em .6em;
+	font-size: $subhead-size;
+	border-radius: .75em;
+	letter-spacing: $caps-spacing;
+}
+
+.button:hover{
+	background-color: $emphasis-color-strong;
+}
+
+
+//==== links =====
+
+// links in body of text
+a.inline{
+	color: $emphasis-color-medium;
+}
+ 
+
+a:not(.no-hover):hover{
+	border-bottom: 0.2em solid $emphasis-color-strong;
+}
+
+ // orange links
+a.primary{ 
+	color: $emphasis-color-strong;
+	text-transform: uppercase;
+	font-weight: $medium-weight;
+	letter-spacing: $caps-spacing;
+	font-size: $subhead-size;
+}
+
+a.primary:visited{
+	color: $visited-link;
+}
+
+a.secondary{ // grey links 
+	color: $link-color-secondary;
+	text-transform: uppercase;
+	font-weight: $medium-weight;
+	letter-spacing: $caps-spacing;
+	font-size: $subhead-size;
+}
+
+a.secondary:visited{
+	color: $visited-link;
+}
+
+
+
+
+// === footer ===
+
+.footer-background-color{
+	background-color: $dark-color;
+}
+
+footer a {
+	color: white;
+	font-style: $regular-weight;
+	font-size: $footer-text-size; 
+	border-bottom: none;
+	letter-spacing: .1em;
+}
+
+.white-text{
+	color:white;
+}
+
+
+
+
+
+@media only screen and (max-width: $break-small) {
+
+	// align title to left on very small screen
+	.align-title-left{
+	 display:flex;
+	 align-items: center;
+	 justify-content: flex-start;
+	}
+
+}
+
+
+@media only screen and (min-width: $break-medium){
+
+	.header-shadow{
+		height: 51px;
+	}
+	
+	li a {
+	 padding: $medium-padding;
+	}
+
+	.position-button{
+		position: static;
+		top: 0;
+		right: 0;
+		margin-right:$medium-padding;
+	}
+
+	.line{
+		visibility: hidden;
+	}
+
+	.align-title-left{
+		 justify-content: flex-start;
+	}
+
+	.align-nav-right{
+	 justify-content: flex-end;
+	}
+	
+
+	.ul{
+		justify-content: flex-end;
+	}
+}

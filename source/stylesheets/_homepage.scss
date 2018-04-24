@@ -1,0 +1,166 @@
+
+
+// === spacing and alignment ====
+
+// limit width of site
+.max-website-width{
+  max-width: 1400px;
+  margin:0 auto;
+  position:relative;
+}
+
+// reset spacing from bulma to 0
+.columns{
+  margin:0;
+  padding:0;
+
+}
+.column{
+  padding:0;
+  margin:0;
+}
+.columns:last-child{
+  margin-bottom:0;
+}
+  
+
+// commonly used spacing for elements
+.object-spacing{
+  padding: $medium-padding;
+}
+
+.section-spacing{
+  padding-top: $extra-large-padding;
+}
+
+
+//containers
+.image-container{
+  height: 20em;
+  width:auto;
+}
+
+.standard-container{
+  height: 100%;
+  @extend .center-object;
+}
+
+
+// helpers for spacing
+.full-width{
+  width: 100%;
+  }
+
+.full-height{
+  height: 100%;
+}
+
+.center-object{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-spacing{
+  padding-top: $large-padding;
+}
+
+//sets text centered on mobile, left aligned on desktop 
+.text-center-mobile{
+  text-align: center;
+  margin:auto;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.video-size{
+  height: 100%;
+
+    // resizes around medium size screen to prevent large video
+   @media only screen and (max-width: $break-medium) and (min-width: $break-medium-small){
+    height: 75vh;
+    }
+  }
+
+// wraps links onto new line when multiple links 
+.link-wrap{
+  display:inline-block;
+  float:left;
+  clear:left;
+  margin-bottom: 1em;
+}
+
+
+.icon{
+  width:4.2em;
+  height: auto;
+}
+
+
+
+//==== Colors ===
+
+.white-background-body{
+  background-color: white;
+}
+
+
+.beyond-max-color{
+    background-color: #F8F8F8;
+  }
+
+.light-background{
+  background-color: $light-neutral-color;
+}
+
+.lightest-background{
+  background-color: $lightest-neutral-color;
+}
+
+.dark-color{
+  color: $dark-color;
+}
+
+.contrast-background{
+ background-color: $contrast-neutral-color;
+}
+
+
+
+
+// === Media Queries ====
+
+// medium view
+@media only screen and (min-width: $break-medium-small){
+  .link-wrap{
+    display:inline;
+    float: none;
+    clear: none;
+    margin-right: $medium-padding; 
+  }
+}
+
+
+//desktop view
+@media only screen and (min-width: $break-medium){
+
+  .section-spacing{
+  padding-top: $extra-large-padding;
+}
+
+  .center{
+    margin:auto;
+    width:100%
+  }
+
+  .text-center-mobile{
+    text-align:left;
+  }
+
+  .hero-spacing{
+  padding-top: 0em;
+  }
+
+}

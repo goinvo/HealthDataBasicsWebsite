@@ -7,10 +7,11 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Middleman" %></title>
-    <%= stylesheet_link_tag "site" %>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,400i" rel="stylesheet">
+    <%= stylesheet_link_tag "index" %>
     <%= javascript_include_tag "site" %>
   </head>
-  <body>
+  <body class="beyond-max-color">
     <%= yield %>
   </body>
 </html>
