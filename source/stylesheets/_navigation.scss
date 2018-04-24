@@ -1,39 +1,49 @@
 
 // ==== main nav =====
-.nav-title{
+.nav-title {
+	padding: $spacing--medium;
+	font-weight: $font-weight--medium;
 	color: $text-color-lighter;
-	font-weight: $medium-weight;
-	border-bottom: none;
-	padding: $medium-padding;
+	border-bottom:none;
 }
 
-ul{
+ul {
 	list-style-type: none;
-    @extend .center-object;
+    @extend .center-children;
+
+    @media only screen and (min-width: $break-medium) {
+		justify-content: flex-end;
+	}
 }
 
 li {
-	float: left;
+	display: inline;
 }
 
-li a {
+.link-style-nav {
     display: block;
     text-align: center;
-    padding-left: 2.3em;
-    padding-right: 2.3em;
+    margin-left: 2em;
+    margin-right: 2em;
     text-decoration: none;
     border-bottom: none;
-    font-size: $subhead-size;
+    font-size: $font-size--caption;
+
+    @media only screen and (min-width: $break-medium) {
+	 	padding: $spacing--medium;
+	 	margin-right: .5em;
+	 	margin-left: .5em;
+	}
 }
 
 // selected navigation bar element 
 .active {
  	color: $emphasis_color-medium;
- 	font-weight: $medium-weight;
+ 	font-weight: $font-weight--medium;
 
 }
 
-.header-shadow{
+.header-shadow {
 	box-shadow: 0 .1em .2em #E8E8E8;
 	width: 100%;
 	height: 5em;
@@ -41,61 +51,76 @@ li a {
 	z-index: 200;
 	background-color: white;
 	position: relative;
-}
 
-.white-text{
-	color:white;
+	@media only screen and (min-width: $break-medium) {
+		height: 46px;
+	}
+
 }
 
 // moves orange button into upper nav bar on mobile
-.position-button{
+.position-button {
 	position: absolute;
 	top: 1em;
-	right: $medium-padding;
+	right: $spacing--medium;
+	margin-right: 0em;
+
+	@media only screen and (min-width: $break-medium){
+		position: static;
+		top: 0;
+		right: 0;
+		margin-right: $spacing--medium;
 	}
+}
 
 
 // Aligns nav right when in desktop. Centers  nav in mobile
-.align-nav-right{
+.align-nav-right {
 	 display:flex;
 	 align-items: center;
 	 justify-content: center;
+	 padding-top: $spacing--small;
+
+	 @media only screen and (min-width: $break-medium){
+	 	justify-content: flex-end;
+	 	padding-top: 0;
+	 }
 }
 
-// Aligns title left when in desktop or very small screen sizes. Centers in mid range sizes
-.align-title-left{
+// Centers in mid range sizes and normal size mobile devices. Aligns title left when in desktop or very small screen sizes.
+.title--left-align {
 	 display:flex;
 	 align-items: center;
 	 justify-content: center;
-}
+	 border-bottom: .05em solid #D3D3D3; // line dividing nav bar from title
+	 margin: 0 $spacing--medium;
 
-.line{
-	height: .05em;
-	width: 90vw;
-	background-color:#D3D3D3;
-	position: absolute; 
-	left: 0;
-	right: 0;
-	top: 2.85em;
-	margin: auto;
-}
+	 // align title to left on VERY small screens ( base is for nomal mobile)
+	 @media only screen and (max-width: $break-small) {
+	 justify-content: flex-start;
+	}
 
+	@media only screen and (min-width: $break-medium) {
+	justify-content: flex-start;
+	border-bottom: none; // removes line dividing nav bar from title
+	}
+}
 
 
 
 .button {
-	font-weight: $regular-weight;
+	font-weight: $font-weight--regular;
 	background-color: $emphasis-color-medium;
 	text-align: center;
 	color: white;
 	border: none;
 	padding: .3em .6em;
-	font-size: $subhead-size;
+	font-size: $font-size--caption;
 	border-radius: .75em;
-	letter-spacing: $caps-spacing;
+	letter-spacing: $line-spacing--extra;
 }
 
-.button:hover{
+.button:hover {
 	background-color: $emphasis-color-strong;
 }
 
@@ -103,38 +128,38 @@ li a {
 //==== links =====
 
 // links in body of text
-a.inline{
+a.inline {
 	color: $emphasis-color-medium;
 }
  
 
-a:not(.no-hover):hover{
+a:not(.no-hover):hover {
 	border-bottom: 0.2em solid $emphasis-color-strong;
 }
 
  // orange links
-a.primary{ 
+a.primary { 
 	color: $emphasis-color-strong;
 	text-transform: uppercase;
-	font-weight: $medium-weight;
-	letter-spacing: $caps-spacing;
-	font-size: $subhead-size;
+	font-weight: $font-weight--medium;
+	letter-spacing: $line-spacing--extra;
+	font-size: $font-size--caption;
 }
 
-a.primary:visited{
-	color: $visited-link;
+a.primary:visited {
+	color: $visited-link-color;
 }
 
-a.secondary{ // grey links 
+a.secondary { // grey links 
 	color: $link-color-secondary;
 	text-transform: uppercase;
-	font-weight: $medium-weight;
-	letter-spacing: $caps-spacing;
-	font-size: $subhead-size;
+	font-weight: $font-weight--medium;
+	letter-spacing: $line-spacing--extra;
+	font-size: $font-size--caption;
 }
 
-a.secondary:visited{
-	color: $visited-link;
+a.secondary:visited {
+	color: $visited-link-color;
 }
 
 
@@ -142,69 +167,13 @@ a.secondary:visited{
 
 // === footer ===
 
-.footer-background-color{
-	background-color: $dark-color;
-}
 
 footer a {
 	color: white;
-	font-style: $regular-weight;
-	font-size: $footer-text-size; 
+	font-style: $font-weight--regular;
+	font-size: $font-size--small; 
 	border-bottom: none;
 	letter-spacing: .1em;
 }
 
-.white-text{
-	color:white;
-}
 
-
-
-
-
-@media only screen and (max-width: $break-small) {
-
-	// align title to left on very small screen
-	.align-title-left{
-	 display:flex;
-	 align-items: center;
-	 justify-content: flex-start;
-	}
-
-}
-
-
-@media only screen and (min-width: $break-medium){
-
-	.header-shadow{
-		height: 51px;
-	}
-	
-	li a {
-	 padding: $medium-padding;
-	}
-
-	.position-button{
-		position: static;
-		top: 0;
-		right: 0;
-		margin-right:$medium-padding;
-	}
-
-	.line{
-		visibility: hidden;
-	}
-
-	.align-title-left{
-		 justify-content: flex-start;
-	}
-
-	.align-nav-right{
-	 justify-content: flex-end;
-	}
-	
-
-	.ul{
-		justify-content: flex-end;
-	}
-}

@@ -3,98 +3,111 @@
 // === spacing and alignment ====
 
 // limit width of site
-.max-website-width{
+.max-website-width {
   max-width: 1400px;
   margin:0 auto;
-  position:relative;
 }
 
 // reset spacing from bulma to 0
-.columns{
-  margin:0;
-  padding:0;
+.columns {
+  margin: 0;
+  padding: 0;
+}
 
+.column {
+  padding: 0;
+  margin: 0;
 }
-.column{
-  padding:0;
-  margin:0;
+
+.columns:last-child {
+  margin-bottom: 0;
 }
-.columns:last-child{
-  margin-bottom:0;
-}
-  
 
 // commonly used spacing for elements
-.object-spacing{
-  padding: $medium-padding;
+.object-spacing {
+  padding: $spacing--medium;
 }
 
-.section-spacing{
-  padding-top: $extra-large-padding;
+.section-spacing {
+  padding-top: $spacing--extra-large;
+
+  @media only screen and (min-width: $break-medium) {
+    padding-top: $spacing--extra-large;
+  }
 }
 
 
 //containers
-.image-container{
+.image-size {
   height: 20em;
-  width:auto;
+  width: auto;
 }
 
-.standard-container{
+.standard-container {
+  @extend .center-children;
+
   height: 100%;
-  @extend .center-object;
 }
 
 
 // helpers for spacing
-.full-width{
+.full-width {
   width: 100%;
-  }
+}
 
-.full-height{
+.full-height {
   height: 100%;
 }
 
-.center-object{
-  display:flex;
+.center-children {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.hero-spacing{
-  padding-top: $large-padding;
+.hero-spacing {
+  padding-top: $spacing--large;
+
+  @media only screen and (min-width: $break-medium) {
+    padding-top: 0em;
+  }
 }
 
 //sets text centered on mobile, left aligned on desktop 
-.text-center-mobile{
+.text-center-mobile {
   text-align: center;
-  margin:auto;
+  margin: auto;
+
+  @media only screen and (min-width: $break-medium) {
+    text-align: left;
+  }
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
-.video-size{
+.video-size {
   height: 100%;
 
     // resizes around medium size screen to prevent large video
-   @media only screen and (max-width: $break-medium) and (min-width: $break-medium-small){
+   @media only screen and (max-width: $break-medium) and (min-width: $break-medium-small) {
     height: 75vh;
     }
-  }
-
-// wraps links onto new line when multiple links 
-.link-wrap{
-  display:inline-block;
-  float:left;
-  clear:left;
-  margin-bottom: 1em;
 }
 
+// wraps links onto new line when multiple links 
+.wrap-links{
+  display: inline-block;
+}
 
-.icon{
-  width:4.2em;
+.wrap-links-spacing{
+  margin-right: $spacing--medium;
+  margin-bottom: $spacing--medium;
+}
+
+.icon {
+  width: 4.2em;
   height: auto;
 }
 
@@ -102,65 +115,34 @@
 
 //==== Colors ===
 
-.white-background-body{
-  background-color: white;
-}
-
-
-.beyond-max-color{
+.background{
+  &--white{
+    background-color: white;
+  }
+  &--grey {
     background-color: #F8F8F8;
   }
-
-.light-background{
-  background-color: $light-neutral-color;
+  &--light {
+    background-color: $light-neutral-color;
+  }
+  &--lightest {
+    background-color: $lightest-neutral-color;
+  }
+  &--contrast {
+    background-color: $contrast-neutral-color;
+  }
+  &--dark{
+    background-color: $dark-color;
+  }
 }
 
-.lightest-background{
-  background-color: $lightest-neutral-color;
-}
-
-.dark-color{
-  color: $dark-color;
-}
-
-.contrast-background{
- background-color: $contrast-neutral-color;
-}
-
-
-
-
-// === Media Queries ====
-
-// medium view
-@media only screen and (min-width: $break-medium-small){
-  .link-wrap{
-    display:inline;
-    float: none;
-    clear: none;
-    margin-right: $medium-padding; 
+.text-color{
+  &--dark{
+    color: $dark-color;
+  }
+  &--white{
+    color: $white;
   }
 }
 
 
-//desktop view
-@media only screen and (min-width: $break-medium){
-
-  .section-spacing{
-  padding-top: $extra-large-padding;
-}
-
-  .center{
-    margin:auto;
-    width:100%
-  }
-
-  .text-center-mobile{
-    text-align:left;
-  }
-
-  .hero-spacing{
-  padding-top: 0em;
-  }
-
-}
