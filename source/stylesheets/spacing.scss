@@ -20,6 +20,34 @@
 
 
 
+
+// helpers for spacing
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.center-children {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-width{
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+.top-padding--medium {
+    padding-top: $spacing--medium;
+}
+
+
+
 // commonly used spacing for elements
 .spacing-object {
     padding: $spacing--medium;
@@ -30,7 +58,7 @@
     padding-top: $spacing--large;
 
     @media only screen and (min-width: $break-medium) {
-        padding-top: $spacing--extra-large;
+        padding-top: $spacing--larger;
     }
 }
 
@@ -39,11 +67,21 @@
 
 }
 
+.spacing-section--large {
+    padding-top: $spacing--large;
+
+    @media only screen and (min-width: $break-medium) {
+        padding-top: $spacing--extra-large;
+    }
+}
+
 
 .spacing-hero {
     padding-top: 9em;
     padding-bottom: $spacing--extra-large;
 }
+
+
 
 
 //containers
@@ -71,35 +109,17 @@
 
     display: block;
     width: 6em;
-    
 }
 
+.image_container--large {
+    @extend .center-width;
 
-
-
-// helpers for spacing
-.full-width {
-    width: 100%;
+    display: block;
+    width: 11em;
 }
 
-.full-height {
-    height: 100%;
-}
-
-.center-children {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.center-width{
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-}
-
-.top-padding--medium {
-    padding-top: $spacing--medium;
+.inline-block{
+    display: inline-block;
 }
 
 

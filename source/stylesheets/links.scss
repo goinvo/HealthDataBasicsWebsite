@@ -2,7 +2,7 @@
 
 // links in body of text
 
-/*
+
 .link {
     text-decoration: none;
     border-bottom: 0.12em solid $link-underline-color;
@@ -12,23 +12,23 @@
     border-bottom: 0.2em solid $emphasis-color-strong;
     }
 
-    &--inline:extend(.link) {
+    &--inline {
         color: $emphasis-color-medium;
     }
 
-    &--primary:extend(.link) {
+    &--primary {
         text-transform: uppercase;
         font-weight: $font-weight--medium;
         letter-spacing: $line-spacing--extra;
         font-size: $font-size--caption;
         color: $emphasis-color-strong;
+
+        &:visited {
+            color: $visited-link-color;   
+        }
     }
 
-    &.link--primary:visited {
-        color: $visited-link-color;
-    }
-
-    &--secondary:extend(.link) {
+    &--secondary {
         text-transform: uppercase;
         font-weight: $font-weight--medium;
         letter-spacing: $line-spacing--extra;
@@ -42,8 +42,7 @@
 
 }
 
-*/
-
+/*
 a {
     text-decoration: none;
     border-bottom: 0.12em solid $link-underline-color;
@@ -83,7 +82,7 @@ a.secondary:visited {
     color: $visited-link-color;
 }
 
-
+*/
 // wraps links onto new line when multiple links 
 .wrap-links{
     display: inline;

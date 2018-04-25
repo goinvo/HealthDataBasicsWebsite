@@ -12,6 +12,12 @@ h1 {
     font-size: 1.76em;
     line-height: 1.25em;
     color: $dark-color;
+    -webkit-animation: fadein 3s;
+    -webkit-animation-timing-function: ease-out;
+    @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 }
 
 h2 {
@@ -51,6 +57,9 @@ p {
     text-align: center;
 }
 
+.font-size--caption{
+    font-size: $font-size--caption;
+}
 
 // === Media Queries ====
 
