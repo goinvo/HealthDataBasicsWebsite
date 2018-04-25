@@ -1,24 +1,21 @@
 
 // ==== main nav =====
 .nav-title {
-	padding: $spacing--medium;
-	border-bottom:none;
-	font-weight: $font-weight--medium;
-	color: $text-color-lighter;
+    padding: $spacing--medium;
+    border-bottom:none;
+    font-weight: $font-weight--medium;
+    color: $text-color-lighter;
 }
 
-ul {
-	list-style-type: none;
+.align-nav {
+    list-style-type: none;
     @extend .center-children;
 
     @media only screen and (min-width: $break-medium) {
-		justify-content: flex-end;
-	}
+        justify-content: flex-end;
+    }
 }
 
-li {
-	display: inline;
-}
 
 .link-style-nav {
     display: block;
@@ -30,97 +27,97 @@ li {
     font-size: $font-size--caption;
 
     @media only screen and (min-width: $break-medium) {
-	 	padding: $spacing--medium;
-	 	margin-right: .5em;
-	 	margin-left: .5em;
-	}
+        padding: $spacing--medium;
+        margin-right: .5em;
+        margin-left: .5em;
+    }
 }
 
-// selected navigation bar element 
-.active {
- 	color: $emphasis_color-medium;
- 	font-weight: $font-weight--medium;
 
+// selected navigation bar element 
+.nav_is_active {
+    color: $emphasis_color-medium;
+    font-weight: $font-weight--medium;
 }
 
 .header-shadow {
-	position: relative;
-	width: 100%;
-	height: 5em;
-	z-index: 200;
-	background-color: white;
-	box-shadow: 0 .1em .2em #E8E8E8;
+    position: relative;
+    width: 100%;
+    height: 5.5em;
+    z-index: 200;
+    background-color: white;
+    box-shadow: 0 .1em .2em #E8E8E8;
 
-	@media only screen and (min-width: $break-medium) {
-		height: 46px;
-	}
+    @media only screen and (min-width: $break-medium) {
+        height: 46px;
+    }
 
 }
 
 // moves orange button into upper nav bar on mobile
 .position-button {
-	position: absolute;
-	top: 1em;
-	right: $spacing--medium;
-	margin-right: 0em;
+    position: absolute;
+    top: 1em;
+    right: $spacing--medium;
+    margin-right: 0em;
 
-	@media only screen and (min-width: $break-medium){
-		position: static;
-		top: 0;
-		right: 0;
-		margin-right: $spacing--medium;
-	}
+    @media only screen and (min-width: $break-medium){
+        position: static;
+        top: 0;
+        right: 0;
+        margin-right: $spacing--medium;
+    }
 }
 
 
 // Aligns nav right when in desktop. Centers  nav in mobile
 .align-nav-right {
-	 display:flex;
-	 align-items: center;
-	 justify-content: center;
-	 padding-top: $spacing--small;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     padding-top: $spacing--small;
 
-	 @media only screen and (min-width: $break-medium){
-	 	justify-content: flex-end;
-	 	padding-top: 0;
-	 }
+     @media only screen and (min-width: $break-medium){
+        justify-content: flex-end;
+        padding-top: 0;
+     }
 }
 
 // Centers in mid range sizes and normal size mobile devices. Aligns title left when in desktop or very small screen sizes.
 .title--left-align {
-	 display:flex;
-	 align-items: center;
-	 justify-content: center;
-	 border-bottom: .05em solid #D3D3D3; // line dividing nav bar from title
-	 margin: 0 $spacing--medium;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     border-bottom: .05em solid #D3D3D3; // line dividing nav bar from title
+     margin: 0 $spacing--medium;
 
-	 // align title to left on VERY small screens ( base is for nomal mobile)
-	 @media only screen and (max-width: $break-small) {
-	 justify-content: flex-start;
-	}
+     // align title to left on VERY small screens ( base is for nomal mobile)
+     @media only screen and (max-width: $break-small) {
+     justify-content: flex-start;
+    }
 
-	@media only screen and (min-width: $break-medium) {
-	justify-content: flex-start;
-	border-bottom: none; // removes line dividing nav bar from title
-	}
+    @media only screen and (min-width: $break-medium) {
+    justify-content: flex-start;
+    border-bottom: none; // removes line dividing nav bar from title
+    }
 }
 
 
 
 .button {
-	padding: .3em .6em;
-	background-color: $emphasis-color-medium;
-	border: none;
-	border-radius: .75em;
-	font-size: $font-size--caption;
-	font-weight: $font-weight--regular;
-	text-align: center;
-	letter-spacing: $line-spacing--extra;
-	color: white;
+    padding: .3em .6em;
+    background-color: $emphasis-color-medium;
+    border: none;
+    border-radius: .75em;
+    font-size: $font-size--caption;
+    font-weight: $font-weight--regular;
+    text-align: center;
+    letter-spacing: $line-spacing--extra;
+    color: white;
 }
 
 .button:hover {
-	background-color: $emphasis-color-strong;
+    background-color: $emphasis-color-strong;
 }
 
 
@@ -128,13 +125,20 @@ li {
 
 // === footer ===
 
+.link {
 
-footer a {
-	border-bottom: none;
-	font-style: $font-weight--regular;
-	font-size: $font-size--small; 
-	letter-spacing: .1em;
-	color: white;
+    &-footer {
+    border-bottom: none;
+    font-style: $font-weight--regular;
+    font-size: $font-size--small; 
+    letter-spacing: .1em;
+    color: white;
+    }
+
+    &-footer--spacing {
+        padding: $spacing--medium $spacing--large $spacing--large ;
+    }
 }
+
 
 

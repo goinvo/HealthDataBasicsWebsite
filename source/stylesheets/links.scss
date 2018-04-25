@@ -1,54 +1,93 @@
 //==== links =====
 
 // links in body of text
+
+/*
+.link {
+    text-decoration: none;
+    border-bottom: 0.12em solid $link-underline-color;
+    color: $text-color-lighter;
+
+    &:not(.no-hover):hover {
+    border-bottom: 0.2em solid $emphasis-color-strong;
+    }
+
+    &--inline:extend(.link) {
+        color: $emphasis-color-medium;
+    }
+
+    &--primary:extend(.link) {
+        text-transform: uppercase;
+        font-weight: $font-weight--medium;
+        letter-spacing: $line-spacing--extra;
+        font-size: $font-size--caption;
+        color: $emphasis-color-strong;
+    }
+
+    &.link--primary:visited {
+        color: $visited-link-color;
+    }
+
+    &--secondary:extend(.link) {
+        text-transform: uppercase;
+        font-weight: $font-weight--medium;
+        letter-spacing: $line-spacing--extra;
+        font-size: $font-size--caption;
+        color: $link-color-secondary;
+    }
+
+    &.link--secondary:visited{
+        color: $visited-link-color;
+    }
+
+}
+
+*/
+
 a {
-	text-decoration: none;
-	border-bottom: 0.12em solid $link-underline-color;
-	color: $text-color-lighter;
+    text-decoration: none;
+    border-bottom: 0.12em solid $link-underline-color;
+    color: $text-color-lighter;
 }
 
 a.inline {
-	color: $emphasis-color-medium;
+    color: $emphasis-color-medium;
 }
  
-
 a:not(.no-hover):hover {
-	border-bottom: 0.2em solid $emphasis-color-strong;
+    border-bottom: 0.2em solid $emphasis-color-strong;
 }
 
  // orange links
 a.primary { 
-	text-transform: uppercase;
-	font-weight: $font-weight--medium;
-	letter-spacing: $line-spacing--extra;
-	font-size: $font-size--caption;
-	color: $emphasis-color-strong;
+    text-transform: uppercase;
+    font-weight: $font-weight--medium;
+    letter-spacing: $line-spacing--extra;
+    font-size: $font-size--caption;
+    color: $emphasis-color-strong;
 }
 
 a.primary:visited {
-	color: $visited-link-color;
+    color: $visited-link-color;
 }
 
 a.secondary { // grey links 
-	text-transform: uppercase;
-	font-weight: $font-weight--medium;
-	letter-spacing: $line-spacing--extra;
-	font-size: $font-size--caption;
-	color: $link-color-secondary;
+    text-transform: uppercase;
+    font-weight: $font-weight--medium;
+    letter-spacing: $line-spacing--extra;
+    font-size: $font-size--caption;
+    color: $link-color-secondary;
 }
 
 a.secondary:visited {
-	color: $visited-link-color;
+    color: $visited-link-color;
 }
-
 
 
 // wraps links onto new line when multiple links 
 .wrap-links{
-  display: inline-block;
+    display: inline;
+    margin-right: $spacing--small;
+    margin-bottom: $spacing--medium;
 }
 
-.wrap-links-spacing{
-  margin-right: $spacing--medium;
-  margin-bottom: $spacing--medium;
-}

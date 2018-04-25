@@ -4,28 +4,37 @@
 
 //sets text centered on mobile, left aligned on desktop 
 .text-center-mobile {
-  text-align: center;
-  margin: auto;
+   text-align: center;
+    margin: auto;
 
   @media only screen and (min-width: $break-medium) {
-    text-align: left;
+       text-align: left;
   }
 }
 
-.text-center {
-  text-align: center;
-}
-
 .video-size {
-  height: 100%;
+    height: 100%;
+    margin-right: $spacing--small;
 
     // resizes around medium size screen to prevent large video
-   @media only screen and (max-width: $break-medium) and (min-width: $break-medium-small) {
-    height: 75vh;
+     @media only screen and (max-width: $break-medium) and (min-width: $break-medium-small) {
+         height: 75vh;
     }
 }
 
+//compensates for margins
+.position-video--left{
+    position: relative;
+    right: $spacing--small;
+}
 
 
+.spacing-hero-homepage{
+    padding-top: $spacing--large;
+
+    @media only screen and (min-width: $break-medium) {
+        padding-top: 0em;
+    }
+}
 
 

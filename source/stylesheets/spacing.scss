@@ -2,75 +2,110 @@
 
 // limit width of site
 .max-website-width {
-  max-width: 1400px;
-  margin:0 auto;
+    max-width: 1400px;
+    margin:0 auto;
 }
 
 // reset spacing from bulma to 0
+
 .columns {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .column {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
-.columns:last-child {
-  margin-bottom: 0;
-}
+
 
 // commonly used spacing for elements
-.object-spacing {
-  padding: $spacing--medium;
+.spacing-object {
+    padding: $spacing--medium;
+    margin: $spacing--small;
 }
 
-.section-spacing {
-  padding-top: $spacing--extra-large;
+.spacing-section {
+    padding-top: $spacing--large;
 
-  @media only screen and (min-width: $break-medium) {
-    padding-top: $spacing--extra-large;
-  }
+    @media only screen and (min-width: $break-medium) {
+        padding-top: $spacing--extra-large;
+    }
+}
+
+.spacing-section--small{
+    padding-top: $spacing--medium;
+
+}
+
+
+.spacing-hero {
+    padding-top: 9em;
+    padding-bottom: $spacing--extra-large;
 }
 
 
 //containers
 .image-size {
-  height: 20em;
-  width: auto;
+      width: 100%;
+      height: auto;
 }
 
 .standard-container {
-  @extend .center-children;
+      @extend .center-children;
 
-  height: 100%;
+      height: 100%;
 }
 
-.icon {
-  width: 4.2em;
-  height: auto;
+.image_container--small {
+      @extend .center-width;
+
+      display: block;
+      width: 4.2em;
+
 }
+
+.image_container--medium {
+    @extend .center-width;
+
+    display: block;
+    width: 6em;
+    
+}
+
+
+
 
 // helpers for spacing
 .full-width {
-  width: 100%;
+    width: 100%;
 }
 
 .full-height {
-  height: 100%;
+    height: 100%;
 }
 
 .center-children {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.hero-spacing {
-  padding-top: $spacing--large;
+.center-width{
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
 
-  @media only screen and (min-width: $break-medium) {
-    padding-top: 0em;
-  }
+.top-padding--medium {
+    padding-top: $spacing--medium;
+}
+
+
+//other classes
+
+
+.line-limit {
+    max-width: 20em;
 }

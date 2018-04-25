@@ -1,56 +1,54 @@
-*{
-	margin: 0;
-	padding: 0;
-	font-family: $font-type;
-	font-size: $font-size--base;
-	letter-spacing: $letter-spacing;
+body {
+    font-family: $font-type;
+    font-size: $font-size--base;
+    letter-spacing: $letter-spacing;
 }
 
 //=== fonts ====
 
 h1 {
-	margin: 0;
-	font-weight: $font-weight--medium;
-	font-size: 1.76em;
-	line-height: 1.2em;
-	color: $emphasis-color-medium;
+    margin: 0;
+    font-weight: $font-weight--medium;
+    font-size: 1.76em;
+    line-height: 1.25em;
+    color: $dark-color;
 }
 
 h2 {
-	font-weight: $font-weight--medium;
-	font-size: 1.25em;
-	line-height: 1.25em;
-	color: $emphasis-color-medium;
+    font-weight: $font-weight--medium;
+    font-size: 1.25em;
+    line-height: 1.25em;
+    color: $emphasis-color-medium;
 }
 
 h3 {
-	padding-top: $spacing--medium;
-	font-weight: $font-weight--medium;
-	font-size: 1.0em;
-	color: $text-color-dark;
+    font-weight: $font-weight--medium;
+    font-size: 1.0em;
+    color: $text-color-dark;
 }
 
 h6 { // used for footer
-	font-size: $font-size--caption;
-	font-weight: $font-weight--medium;
-	letter-spacing: .075em;
-	color: $footer-title-color;
+    font-size: $font-size--caption;
+    font-weight: $font-weight--medium;
+    letter-spacing: .075em;
+    color: $footer-title-color;
+    margin: 0;
 }
 
 p {
- 	max-width: $line-limit--mobile;
- 	padding-top: $spacing--small;
-	padding-bottom: $spacing--small;
- 	font-size: 1.0em;
- 	font-weight: $font-weight--regular;
-	line-height: 1.4em;
-	color: $text-color-lighter;
+    max-width: $line-limit--mobile;
+    font-size: 1.0em;
+    font-weight: $font-weight--regular;
+    line-height: 1.4em;
+    color: $text-color-lighter;
 }
 
+.line-height-prose{
+    line-height: $line-height-prose;
+}
 
-img {
-	width: 100%;
-	height: auto;
+.text-center{
+    text-align: center;
 }
 
 
@@ -58,31 +56,31 @@ img {
 
 // very small mobile devices
 @media only screen and (max-width: $break-small){
-	h1 {
-		font-size: 1.4em;
-	}
+    h1 {
+        font-size: 1.4em;
+    }
 }
 
 
 @media only screen and (min-width: $break-medium){
 
-	h1 {
-		font-size: 1.60em;
-	}
+    h1 {
+        font-size: 1.75em;
+    }
 
-	h2 {
-		font-size: 1.25em;
-	}
+    h2 {
+        font-size: 1.25em;
+    }
 
-	p {
-		max-width: $line-limit--desktop;
-	}
+    p {
+        max-width: $line-limit--desktop;
+    }
 }
 
 
 //large
 @media only screen and (min-width: $break-large){
-	h1 {
-		font-size: 2.403em;
-	}
+    h1 {
+        font-size: 2.403em;
+    }
 }
