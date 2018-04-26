@@ -42,54 +42,11 @@
 
 }
 
-
-
-
-/*
-a {
-    text-decoration: none;
-    border-bottom: 0.12em solid $link-underline-color;
-    color: $text-color-lighter;
-}
-
-a.inline {
-    color: $primary-color;
-}
- 
-a:not(.no-hover):hover {
-    border-bottom: 0.2em solid $$primary-darker-color;
-}
-
- // orange links
-a.primary { 
-    text-transform: uppercase;
-    font-weight: $font-weight--medium;
-    letter-spacing: $line-spacing--extra;
-    font-size: $font-size--caption;
-    color: $$primary-darker-color;
-}
-
-a.primary:visited {
-    color: $visited-link-color;
-}
-
-a.secondary { // grey links 
-    text-transform: uppercase;
-    font-weight: $font-weight--medium;
-    letter-spacing: $line-spacing--extra;
-    font-size: $font-size--caption;
-    color: $link-color-secondary;
-}
-
-a.secondary:visited {
-    color: $visited-link-color;
-}
-
-*/
 // wraps links onto new line when multiple links 
 .wrap-links{
     display: inline;
-    margin-right: $spacing--small;
-    margin-bottom: $spacing--large;
+    float: left;
+    margin-right: $spacing--medium;
+    margin-bottom: $spacing--medium;
 }
 

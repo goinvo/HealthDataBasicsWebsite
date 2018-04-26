@@ -8,45 +8,282 @@
             </div>
 
                 <nav class="column is-half">
-                     <ul class="align-nav-right align-nav">
-                        <li> <a class="nav_is_active no-hover link-style-nav" href="/" > Home </a></li>
-                        <li> <a class="link-style-nav" href="process.html.erb"> Process </a> </li>
-                        <li> <a class="link-style-nav" href="/about.html.erb"> About </a> </li>
-                        <li> <a class=" link-style-nav button no-hover position-button" href="http://google.com">Contact</a> </li>
+                     <ul class="align-nav align-nav-right list--unstyled">
+                        <li> <a class="link link-style-nav" href="/" > Tools </a></li>
+                        <li> <a class="link link-style-nav nav_is_active no-hover" href="/process.html"> Process </a> </li>
+                        <li> <a class="link link-style-nav" href="/about.html"> About </a> </li>
+                        <li> <a class="link-style-nav button no-hover position-button" href="http://google.com">Contact</a> </li>
                      </ul>
-                </nav> 
+                </nav>
         </div>
     </div>
 </header>
 
 <main class="max-website-width background--white">
+
+    <!-- Header -->
     <div class="background--lightest center-children hero--spacing">
         <div class="text-center spacing-object">
             <img class="center-width image-container--medium" src="/images/svg/icon-process.svg" type="svg"> </img>
-            <h1 class="line-limit top-padding--medium animate--fade">How We Created a Patient Centered Tool</h1>
-            <p class="center-width"> See inside the user-centered research, design, and validation that connects patients to health data</p>
+            <h1 class=" top-padding--medium animate--fade line-limit--small">How We Created a Patient Centered Tool</h1>
+            <p class="center-width line-limit--medium"> See inside the user-centered research, design, and validation that connects patients to health data</p>
         </div>
     </div>
 
+    <!-- Research -->
     <section>
-        <img class=" center-width image-container--small spacing-section" src="/images/svg/icon-research.svg" type="svg"> </img>
+
+        <img class="center-width image-container--small spacing-section--large" src="/images/svg/icon-research.svg" type="svg"> </img>
         <h2 class="text-center"> Research and Definition</h2>
-
         <div class="columns">
-            <div class="column is-half" >
+            <div class="column is-half">
+                <div>
+                    <div class= "spacing-object background--lightest">
+                        <img class="image-size" srcset="/images/half/survey.png 2x, /images/half/survey@0,5x.png 1x" type="image"
+                        src="/images/half/survey.png" alt="bar chart"> </img>
+                    </div>
+                 </div>
+            </div>
 
-                <div class= "standard-container spacing-object background--lightest">
-                    <img class="image-size" srcset="/images/half/survey.png 2x, /images/half/survey@0,5x.png 1x" type="image"
-                    src="/images/half/survey.png" alt="bar chart"> </img>
+            <div class="column is-half">
+                <div class="standard-container spacing-object">
+                    <div>
+                        <h1 class="process--text-style">1a</h1>
+                        <h3> Survey and Interviews</h3>
+                        <p> To identify the factors that limit patients and caregivers’ awareness,  understanding, and use of health data, FasterCures distributed a survey to 700+ patients and caregivers, and interviewed 15 key opinion leaders. </p>
+                        <ul class="list--unstyled">
+                            <li class="wrap-links"> <a class="link link--primary" href="https://stackoverflow.com/questions/5721966/webkit-margin-adds-unwanted-margin-on-texts/31851292"> Survey Results</a></li>
+                            <li class="wrap-links"> <a class="link link--secondary" href="https://stackoverflow.com/questions/5721966/webkit-margin-adds-unwanted-margin-on-texts/31851292"> All Research</a></li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+
+         <div class="columns">
+            <div class="column is-half">
+                <div class="spacing-object background--lightest">
+                    <img class="image-size" srcset="/images/half/definition.png 2x, /images/half/definition@0,5x.png 1x" type="image"
+                    src="/images/half/definition.png" alt="sources of health data graphic"> </img>
                 </div>
             </div>
 
             <div class="column is-half">
                 <div class="standard-container spacing-object">
                     <div>
-                        <h1 class="process--text-style"> 1a</h1>
-                        <h3> Survey and Interviews</h3>
-                        <p> To identify the factors that limit patients and caregivers’ awareness,  understanding, and use of health data, FasterCures distributed a survey to 700+ patients and caregivers, and interviewed 15 key opinion leaders. </p>
+                        <h1 class="process--text-style"> 1b</h1>
+                        <h3>Create Definition of Health Data</h3>
+                        <p> From a review of existing resources, and from the survey, FasterCures established the need for a definition of health data. A survey of 25 thought leaders informed the formation of a Wikipedia page definition and accompanying graphics. </p>
+                        <ul class="list--unstyled">
+                            <li class="wrap-links"> <a class="link link--primary" href="https://stackoverflow.com/questions/5721966/webkit-margin-adds-unwanted-margin-on-texts/31851292"> Sources of Data Graphic</a></li>
+                            <li class="wrap-links"> <a class="link link--secondary" href="https://stackoverflow.com/questions/5721966/webkit-margin-adds-unwanted-margin-on-texts/31851292">Wikipedia Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="columns">
+            <div class="column is-half">
+                <div class= "spacing-object background--lightest">
+                    <img class="image-size" srcset="/images/half/journey.png 2x, /images/half/journey@0,5x.png 1x" type="image"
+                    src="/images/half/journey.png" alt="journey map"> </img>
+                </div>
+            </div>
+
+            <div class="column is-half">
+                <div class="standard-container spacing-object">
+                    <div>
+                        <h1 class="process--text-style"> 1c</h1>
+                        <h3>Need Identification and Guidelines</h3>
+                        <p> GoInvo then structured learnings and defined design principles taking into account the different needs of patient groups. FasterCures explored existing resources on health data and analyzed the survey findings which revealed a need to build trust with individuals before engaging them. </p>
+                        <ul class="list--unstyled">
+                            <li class="wrap-links"> <a class="link link--primary" href="https://stackoverflow.com/questions/5721966/webkit-margin-adds-unwanted-margin-on-texts/31851292"> Pharmacy Journey</a></li>
+                            <li class="wrap-links"> <a class="link link--secondary" href="https://stackoverflow.com/questions/5721966/webkit-margin-adds-unwanted-margin-on-texts/31851292">Design Guidelines</a></li>
+                            <li class="wrap-links"> <a class="link link--secondary" href="https://stackoverflow.com/questions/5721966/webkit-margin-adds-unwanted-margin-on-texts/31851292"> All Research</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Design -->
+    <section>
+
+        <img class="center-width image-container--small spacing-section--large" src="/images/svg/icon-design.svg" type="svg"> </img>
+        <h2 class="text-center">Design</h2>
+
+        <div class="columns">
+            <div class="column is-half">
+                <div>
+                    <div class= "spacing-object background--lightest">
+                        <img class="image-size" srcset="/images/half/sketch.png 2x, /images/half/sketch@0,5x.png 1x" type="image"
+                        src="/images/half/sketch.png" alt="three sketches of concepts"> </img>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="column is-half">
+                <div class="standard-container spacing-object">
+                    <div>
+                        <h1 class="process--text-style">2a</h1>
+                        <h3>Brainstorm Ideas</h3>
+                        <p> Early renderings of over 20 concepts explored a full possibility of digital, physical, and exhibit based solutions. Concepts ranged from viral videos and patient trainings to interactive exhibits that explored an individual’s health data.  </p>
+                        <ul class="list--unstyled">
+                            <li class="wrap-links"> <a class="link link--primary" href="https://stackoverflow.com/questions/5721966/webkit-margin-adds-unwanted-margin-on-texts/31851292">Sketches</a></li>
+                            <li class="wrap-links"> <a class="link link--secondary" href="https://stackoverflow.com/questions/5721966/webkit-margin-adds-unwanted-margin-on-texts/31851292">All Exploration</a></li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+
+        </div>
+
+
+         <div class="columns">
+            <div class="column is-half">
+                <div class="spacing-object background--lightest">
+                    <img class="image-size" srcset="/images/half/decision.png 2x, /images/half/decision@0,5x.png 1x" type="image"
+                    src="/images/half/definition.png" alt="decision chart"> </img>
+                </div>
+            </div>
+
+            <div class="column is-half">
+                <div class="standard-container spacing-object">
+                    <div>
+                        <h1 class="process--text-style">2b</h1>
+                        <h3> Evaluate Concepts</h3>
+                        <p> Based on consultation with the advisory panel, consisting of experts in healthcare and patient engagemen, FasterCures identified factors such as  reach and educational impact on which to evaluate concepts. This data combined with a consideration of organizational strengths led to the pursuit of a combination of in-clinic posters and a digital plug-in. </p>
+                        <ul class="list--unstyled">
+                            <li class="wrap-links"> <a class="link link--primary" href="https://stackoverflow.com/questions/5721966/webkit-margin-adds-unwanted-margin-on-texts/31851292"> Dot Decision</a></li>
+                            <li class="wrap-links"> <a class="link link--secondary" href="https://stackoverflow.com/questions/5721966/webkit-margin-adds-unwanted-margin-on-texts/31851292">Pugh Chart</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="columns">
+            <div class="column is-half">
+                <div class="spacing-object background--lightest">
+                    <img class="image-size" srcset="/images/half/journey.png 2x, /images/half/journey@0,5x.png 1x" type="image"
+                    src="/images/half/journey.png" alt="poster of where health data goes"> </img>
+                </div>
+            </div>
+
+            <div class="column is-half">
+                <div class="standard-container spacing-object">
+                    <div>
+                        <h1 class="process--text-style"> 2c</h1>
+                        <h3>Craft the Story </h3>
+                        <p> GoInvo explored concepts in greater detail, outlining frameworks and honing in on the the educational goals and messages each asset could tell through a series of poster concepts and an in-depth plugin. </p>
+                        <ul class="list--unstyled">
+                            <li class="wrap-links"> <a class="link link--primary" href="https://stackoverflow.com/questions/5721966/webkit-margin-adds-unwanted-margin-on-texts/31851292">Poster</a></li>
+                            <li class="wrap-links"> <a class="link link--secondary" href="https://stackoverflow.com/questions/5721966/webkit-margin-adds-unwanted-margin-on-texts/31851292"> All frameworks</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="columns">
+            <div class="column is-half">
+                <div class="spacing-object background--lightest">
+                    <img class="image-size" srcset="/images/half/illustration.png 2x, /images/half/illustration@0,5x.png 1x type="image"
+                    src="/images/half/illustration.png" alt="illustration of health data"> </img>
+                </div>
+            </div>
+
+            <div class="column is-half">
+                <div class="standard-container spacing-object">
+                    <div>
+                        <h1 class="process--text-style"> 2d</h1>
+                        <h3>Create Visuals  </h3>
+                        <p>GoInvo created a visual language for health data through experimentation with a range of styles and layouts for icons and illustrations. The goal was to create effective and accessible visuals. </p>
+                        <ul class="list--unstyled">
+                            <li class="wrap-links"> <a class="link link--primary" href="https://stackoverflow.com/questions/5721966/webkit-margin-adds-unwanted-margin-on-texts/31851292">Icons</a></li>
+                            <li class="wrap-links"> <a class="link link--secondary" href="https://stackoverflow.com/questions/5721966/webkit-margin-adds-unwanted-margin-on-texts/31851292">Illustrations</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- framework & testing -->
+    </section>
+        <img class="image-container--small spacing-section--large center-width" src="images/svg/icon-framework2.svg" type="svg"> </img>
+        <h2 class="text-center"> Framework and Testing </h2>
+
+        <div class="columns">
+            <div class="column is-half">
+                <div class="spacing-object background--lightest">
+                    <div>
+                        <img class="image-size" srcset="/images/half/framework.png 2x, /images/half/framework@0,5x.png 1x" src="/images/half/framework.png" alt="flow diagram with health belief model"> </img>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-half">
+                <div class="standard-container spacing-object">
+                    <div>
+                        <h1 class="process--text-style"> 3a </h1>
+                        <h3> Align with Patient Needs</h3>
+                        <p>Further research for the plugin defined patient profiles and outlined how the design could align with the Health Belief Model and facilitate behavior change through behavioral psychology. In addition, GoInvo used NIH guidance on how to encourage behavior change at different phases through small, actionable steps.</p>
+                        <ul class="list--unstyled">
+                            <li class="wrap-links"> <a class="link link--primary" href="whales.com"> Health Belief Model</a> </li>
+                            <li class="wrap-links"> <a class="link link--secondary" href="whales.com"> Plugin Guidelines </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+         <div class="columns">
+            <div class="column is-half">
+                <div class="spacing-object background--lightest">
+                     <img class="image-size" srcset="/images/half/flow.png 2x, /images/half/flow@0,5x.png 1x" src="/images/half/flow.png" alt="flow diagram of plugin"> </img>
+                </div>
+            </div>
+
+            <div class="column is-half">
+                <div class="standard-container spacing-object">
+                    <div>
+                        <h1 class="process--text-style"> 3b </h1>
+                        <h3>Design for Behavior Change</h3>
+                        <p>A series of prototypes explored different ways of integrating research. One method included hearts that an individual could earn or lose as they progressed. In addition, GoInvo tiered information for individuals with short, medium, and long attention spans. Individuals have the opportunity to interact with what they’ve learned through quizzes such as guessing a health data sound, or growing a plant through correct quiz responses. </p>
+                        <ul class="list--unstyled">
+                            <li class="wrap-links"> <a class="link link--primary" href="whales.com">Plugin Flow</a> </li>
+                            <li class="wrap-links"> <a class="link link--secondary" href="whales.com"> Quiz Prototype </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column is-half">
+                <div class="spacing-object background--lightest">
+                    <img  class="image-size" srcset="/images/half/testing.png 2x, /images/half/testing@0,5x.png 1x" src="/images/half/testing.png" alt=" test report"> </img>
+                </div>
+            </div>
+
+            <div class="column is-half">
+                <div class="spacing-object standard-container">
+                    <div>
+                        <h1 class="process--text-style"> 3c </h1>
+                        <h3>Validate Design</h3>
+                        <p>A test of 2 prototypes received strong marks from 30 patients in a test that measured trust, credibility, usability, and appearance. 29/30 patients correctly identified the 5 factors of health data, indicating a strong signal for educational effectiveness. </p>
+                         <a class="link link--primary" href="whales.com">Plugin Flow</a> 
                     </div>
                 </div>
             </div>
@@ -54,6 +291,23 @@
 
 
 
-    </section>
+<!--contact -->
+        <div class="background--lightest hero--spacing standard-container">
+            <div class="text-center">
+                <img class="image-container--small" src="images/svg/icon-contact.svg" type="svg"> </img>
+                <h2>Let Us Build This For You </h2>
+                <p class="text-center line-limit--medium">Empower your patients or customers with a greater understanding of their health data or explore all our files.</p>
+                <div class="center-children">
+                    <ul class="list--unstyled">
+                        <li class="wrap-links"> <a class="button" href="narwhales.com"> Contact us </a> </li>
+                        <li class="wrap-links"> <a class="link link--secondary" href="seaslugs.com"> All Files </a> </li>
+                    </ul>
+            </div>
+            </div>
+        </div>
+
+
+
+    </section 
 
 </main>

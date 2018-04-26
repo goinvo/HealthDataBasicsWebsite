@@ -50,7 +50,7 @@
 
 // commonly used spacing for elements
 .spacing-object {
-    padding: $spacing--small;
+    padding: $spacing--medium;
     margin: $spacing--small;
 }
 
@@ -77,11 +77,10 @@
 
 
 .hero--spacing {
-    padding-top: $spacing--extra-large;
-    padding-bottom: $spacing--large;
+    padding: 3em 0;
 
     @media only screen and (min-width: $break-medium){
-        padding-top: 9em;
+            padding: 5.5em 0;
     }
 }
 
@@ -132,10 +131,6 @@
 //other classes
 
 .vertical-line{
-    border-right: 1px solid $line-color;
+    border-right: 3px solid $line-color;
 }
 
-
-.line-limit {
-    max-width: 18em;
-}

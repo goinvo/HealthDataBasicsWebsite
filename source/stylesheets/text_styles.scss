@@ -38,7 +38,15 @@ h6 { // used for footer
 }
 
 p {
-    max-width: $line-limit--mobile;
+    max-width: $line-limit--medium;
+    font-size: 1.0em;
+    font-weight: $font-weight--regular;
+    line-height: 1.4em;
+    color: $body-color;
+}
+
+li{
+    max-width: $line-limit--medium;
     font-size: 1.0em;
     font-weight: $font-weight--regular;
     line-height: 1.4em;
@@ -47,6 +55,14 @@ p {
 
 .line-height--prose {
     line-height: $line-height--prose;
+}
+
+.line-limit--small {
+    max-width: $line-limit--small;
+}
+
+.line-limit--medium {
+    max-width: $line-limit--medium;
 }
 
 .text-center {
@@ -68,6 +84,17 @@ p {
 .process--text-style {
     color: $process-number-color;
 }
+
+
+.no-spacing{
+    padding: 0;
+    margin: 0;
+}
+
+.padding-bottom{
+    padding-bottom: $spacing--medium;
+}
+
 // === Media Queries ====
 
 // very small mobile devices
@@ -88,7 +115,7 @@ p {
     }
 
     p {
-        max-width: $line-limit--desktop;
+        max-width: $line-limit--large;
     }
 
 }
