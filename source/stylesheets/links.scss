@@ -5,15 +5,15 @@
 
 .link {
     text-decoration: none;
-    border-bottom: 0.12em solid $link-underline-color;
-    color: $text-color-lighter;
+    border-bottom: 0.12em solid $link-underline-primary-color;
+    color: $body-color;
 
     &:not(.no-hover):hover {
-    border-bottom: 0.2em solid $emphasis-color-strong;
+    border-bottom: 0.2em solid $primary-darker-color;
     }
 
     &--inline {
-        color: $emphasis-color-medium;
+        color: $primary-color;
     }
 
     &--primary {
@@ -21,10 +21,10 @@
         font-weight: $font-weight--medium;
         letter-spacing: $line-spacing--extra;
         font-size: $font-size--caption;
-        color: $emphasis-color-strong;
+        color: $primary-darker-color;
 
         &:visited {
-            color: $visited-link-color;   
+            color: $link-visited-color;   
         }
     }
 
@@ -33,14 +33,17 @@
         font-weight: $font-weight--medium;
         letter-spacing: $line-spacing--extra;
         font-size: $font-size--caption;
-        color: $link-color-secondary;
+        color: $link-underline-secondary-color;
     }
 
     &.link--secondary:visited{
-        color: $visited-link-color;
+        color: $link-visited-color;
     }
 
 }
+
+
+
 
 /*
 a {
@@ -50,11 +53,11 @@ a {
 }
 
 a.inline {
-    color: $emphasis-color-medium;
+    color: $primary-color;
 }
  
 a:not(.no-hover):hover {
-    border-bottom: 0.2em solid $emphasis-color-strong;
+    border-bottom: 0.2em solid $$primary-darker-color;
 }
 
  // orange links
@@ -63,7 +66,7 @@ a.primary {
     font-weight: $font-weight--medium;
     letter-spacing: $line-spacing--extra;
     font-size: $font-size--caption;
-    color: $emphasis-color-strong;
+    color: $$primary-darker-color;
 }
 
 a.primary:visited {
@@ -87,6 +90,6 @@ a.secondary:visited {
 .wrap-links{
     display: inline;
     margin-right: $spacing--small;
-    margin-bottom: $spacing--medium;
+    margin-bottom: $spacing--large;
 }
 

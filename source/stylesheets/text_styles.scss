@@ -9,28 +9,24 @@ body {
 h1 {
     margin: 0;
     font-weight: $font-weight--medium;
-    font-size: 1.76em;
+    font-size: 1.77em;
     line-height: 1.25em;
-    color: $dark-color;
-    -webkit-animation: fadein 3s;
-    -webkit-animation-timing-function: ease-out;
-    @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
+    color: $title-color;
 }
 
 h2 {
     font-weight: $font-weight--medium;
-    font-size: 1.25em;
+    font-size: 1.33em;
     line-height: 1.25em;
-    color: $emphasis-color-medium;
+    color: $primary-color;
 }
 
 h3 {
     font-weight: $font-weight--medium;
     font-size: 1.0em;
-    color: $text-color-dark;
+    color: $header-color;
+    margin-top: $spacing--small;
+    margin-bottom: $spacing--small;
 }
 
 h6 { // used for footer
@@ -46,27 +42,38 @@ p {
     font-size: 1.0em;
     font-weight: $font-weight--regular;
     line-height: 1.4em;
-    color: $text-color-lighter;
+    color: $body-color;
 }
 
-.line-height-prose{
-    line-height: $line-height-prose;
+.line-height--prose {
+    line-height: $line-height--prose;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.font-size--caption{
+.font-size--caption {
     font-size: $font-size--caption;
 }
 
+.footer--text-style {
+    border-bottom: none;
+    font-style: $font-weight--regular;
+    font-size: $font-size--small; 
+    letter-spacing: .1em;
+    color: white;
+}
+
+.process--text-style {
+    color: $process-number-color;
+}
 // === Media Queries ====
 
 // very small mobile devices
 @media only screen and (max-width: $break-small){
     h1 {
-        font-size: 1.4em;
+        font-size: 1.45em;
     }
 }
 
@@ -74,16 +81,16 @@ p {
 @media only screen and (min-width: $break-medium){
 
     h1 {
-        font-size: 1.75em;
+        font-size: 2.1em;
     }
-
-    h2 {
-        font-size: 1.25em;
+    h3{
+        font-size: 1.2em;
     }
 
     p {
         max-width: $line-limit--desktop;
     }
+
 }
 
 
@@ -91,5 +98,15 @@ p {
 @media only screen and (min-width: $break-large){
     h1 {
         font-size: 2.403em;
+    }
+}
+
+
+.animate--fade{
+    -webkit-animation: fadein 3s;
+    -webkit-animation-timing-function: ease-out;
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
     }
 }

@@ -14,25 +14,60 @@ $spacing--larger: 2.5rem;
 $spacing--extra-large: 5.5rem;
 
 //line limits
-$line-limit--desktop: 39em;
 $line-limit--mobile: 33em;
+$line-limit--desktop: 39em;
 $letter-spacing: 0.025em;
-$line-height-prose: 1.6em;
+$line-height--prose: 1.6em;
 
 
-// color
-$lightest-neutral-color: #F0F4FA; 
-$light-neutral-color: #EBEEF7;  
-$contrast-neutral-color: #FFF3EF; 
-$dark-color: #2D3346;
-$emphasis-color-strong: #CD4722; 
-$emphasis-color-medium: #DE5B34;
-$text-color-dark: #434A53;
-$text-color-lighter: #454E6D;
-$link-underline-color: #F39779;
-$link-color-secondary: #58606C;
-$visited-link-color: #4F2478;
-$footer-title-color: #BDC5DD;
+
+
+
+//colors by hue
+$blue-lightest: #F0F4FA;
+$blue-light: #EBEEF7; 
+$blue-semi-light: #BDC5DD; 
+$blue-dark: #2D3346;
+
+$orange-lightest:#FFF3EF;
+$orange-light: #F39779;
+$orange: #DE5B34;
+$orange-darker: #CD4722; 
+
+$grey-lightest: #eef2f5;
+$grey: #F8F8F8;
+$grey-dark: #454E6D; 
+$grey-darker: #434A53;
+
+$purple: #5E2A8D;
+
+
+
+//colors by use 
+
+//font
+$title-color: $blue-dark;
+$header-color: $grey-darker;
+$body-color: $grey-dark;
+
+$primary-color: $orange;
+$primary-darker-color: $orange-darker;
+$secondary-color: $blue-dark;
+
+//links
+$link-underline-primary-color: $orange-light ;
+$link-underline-secondary-color: $grey-dark;
+$link-visited-color: $purple;
+
+//specific colors
+$footer-title-color: $blue-semi-light;
+$video-background-color: $grey-lightest;
+$beyond-max-width-color: $grey;
+$process-number-color: $blue-semi-light;
+$line-color: $blue-light;
+
+
+
 
 //font
 $font-type: 'Montserrat', Arial;

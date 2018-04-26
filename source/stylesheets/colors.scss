@@ -5,25 +5,28 @@
         background-color: white;
   }
     &--grey {
-        background-color: #F8F8F8;
+        background-color: $beyond-max-width-color;
   }
     &--light {
-        background-color: $light-neutral-color;
+        background-color: $blue-light;
   }
     &--lightest {
-        background-color: $lightest-neutral-color;
+        background-color: $blue-lightest;
   }
-   &--contrast {
-        background-color: $contrast-neutral-color;
+    &--contrast {
+        background-color: $orange-lightest;
   }
     &--dark{
-        background-color: $dark-color;
+        background-color: $blue-dark;
   }
+    &--video {
+        background-color: $video-background-color;
+    }
 }
 
 .text-color{
     &--contrast{
-        color: $emphasis-color-medium;
+        color: $primary-color;
   }
     &--white{
         color: $white;

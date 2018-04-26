@@ -4,7 +4,7 @@
     padding: $spacing--medium;
     border-bottom:none;
     font-weight: $font-weight--medium;
-    color: $text-color-lighter;
+    color: $body-color;
     text-decoration: none;
 }
 
@@ -37,7 +37,7 @@
 
 // selected navigation bar element 
 .nav_is_active {
-    color: $emphasis_color-medium;
+    color: $primary-color;
     font-weight: $font-weight--medium;
 }
 
@@ -107,7 +107,7 @@
 
 .button {
     padding: .3em .6em;
-    background-color: $emphasis-color-medium;
+    background-color: $primary-color;
     border: none;
     border-radius: .75em;
     font-size: $font-size--caption;
@@ -118,28 +118,9 @@
 }
 
 .button:hover {
-    background-color: $emphasis-color-strong;
+    background-color: $primary-darker-color;
 }
 
-
-
-
-// === footer ===
-
-.link {
-
-    &-footer {
-    border-bottom: none;
-    font-style: $font-weight--regular;
-    font-size: $font-size--small; 
-    letter-spacing: .1em;
-    color: white;
-    }
-
-    &-footer--spacing {
-        padding: $spacing--medium $spacing--large $spacing--large ;
-    }
-}
 
 
 
