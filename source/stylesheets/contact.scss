@@ -1,9 +1,10 @@
 .input{
-    border: 1px solid $grey-dark;
-    margin: $spacing--small $spacing--small $spacing--small 0;
-    padding: $spacing--small;
     width: 70vw;
     max-width: $line-limit--medium;
+    margin: $spacing--small $spacing--small $spacing--small 0;
+    padding: $spacing--small;
+    border: .1em solid $border-input;
+    border-radius: .2em;
 
     &--paragraph{
         height: 20em;

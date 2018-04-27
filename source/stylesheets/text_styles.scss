@@ -45,11 +45,7 @@ p {
 }
 
 li{
-    max-width: $line-limit--medium;
-    font-size: 1.0em;
-    font-weight: $font-weight--regular;
-    line-height: 1.4em;
-    color: $body-color;
+    @extend p;
 }
 
 .line-height--prose {
