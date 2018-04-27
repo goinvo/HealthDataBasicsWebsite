@@ -8,35 +8,9 @@
     text-decoration: none;
 }
 
-.align-nav {
-    list-style-type: none;
-    @extend .center-children;
-
-    @media only screen and (min-width: $break-medium) {
-        justify-content: flex-end;
-    }
-}
-
-
-.link-style-nav {
-    display: block;
-    text-align: center;
-    margin-left: 2em;
-    margin-right: 2em;
-    border-bottom: none;
-    text-decoration: none;
-    font-size: $font-size--caption;
-
-    @media only screen and (min-width: $break-medium) {
-        padding: $spacing--medium;
-        margin-right: .5em;
-        margin-left: .5em;
-    }
-}
-
 
 // selected navigation bar element 
-.nav_is_active {
+.nav--is-active {
     color: $primary-color;
     font-weight: $font-weight--medium;
 }
@@ -50,7 +24,7 @@
     box-shadow: 0 .1em .2em #E8E8E8;
 
     @media only screen and (min-width: $break-medium) {
-        height: 46px;
+        height: 3.2em;
     }
 
 }
@@ -58,7 +32,7 @@
 // moves orange button into upper nav bar on mobile
 .position-button {
     position: absolute;
-    top: 1em;
+    top: .8em;
     right: $spacing--medium;
     margin-right: 0em;
 
@@ -72,7 +46,7 @@
 
 
 // Aligns nav right when in desktop. Centers  nav in mobile
-.align-nav-right {
+.nav--align-right {
      display:flex;
      align-items: center;
      justify-content: center;
@@ -106,14 +80,14 @@
 
 
 .button {
-    padding: .3em .6em;
+    padding: .4em .6em;
     background-color: $primary-color;
-    text-decoration: none;
+    text-decoration: none;  
     border: none;
     border-radius: .75em;
-    font-size: $font-size--caption;
-    font-weight: $font-weight--regular;
+    font-size: $font-size--small;
     text-align: center;
+    line-height: 1;
     letter-spacing: $line-spacing--extra;
     color: white;
 }

@@ -4,12 +4,15 @@
 
 //sets text centered on mobile, left aligned on desktop 
 .text-center-mobile {
-   text-align: center;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-  @media only screen and (min-width: $break-medium) {
+    @media only screen and (min-width: $break-medium) {
        text-align: left;
-  }
+       justify-content: flex-start;
+    }
 }
 
 .video-size {
@@ -18,23 +21,23 @@
 
     // resizes around medium size screen to prevent large video
      @media only screen and (max-width: $break-medium) and (min-width: $break-medium-small) {
-         height: 75vh;
+        height: 75vh;
     }
 }
 
 //compensates for margins
-.position-video--left{
-    position: relative;
-    right: $spacing--small;
+.margin-right--small{
+
+    @media only screen and (min-width: $break-medium){
+        margin-right: $spacing--small;
+    }
 }
 
 
 .spacing-hero-homepage{
-    padding-top: $spacing--large;
+    padding-top: $spacing--medium;
 
     @media only screen and (min-width: $break-medium) {
         padding-top: 0em;
     }
 }
-
-

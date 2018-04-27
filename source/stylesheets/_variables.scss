@@ -1,9 +1,9 @@
 
 //media query size
-$break-large: 960px;
+$break-large: 1080px;
 $break-medium: 769px;
 $break-medium-small: 470px;
-$break-small: 350px;
+$break-small: 360px;
 
 
 //standard padding 
@@ -14,8 +14,8 @@ $spacing--larger: 2.5rem;
 $spacing--extra-large: 5.5rem;
 
 //line limits
-$line-limit--small: 18em;
-$line-limit--medium: 32em;
+$line-limit--small: 17em;
+$line-limit--medium: 30em;
 $line-limit--large: 39em;
 $letter-spacing: 0.025em;
 $line-height--prose: 1.6em;
@@ -27,7 +27,7 @@ $line-height--prose: 1.6em;
 //colors by hue
 $blue-lightest: #F0F4FA;
 $blue-light: #EBEEF7; 
-$blue-semi-light: #BDC5DD; 
+$blue-semi-light: #D8DDEC; 
 $blue-dark: #2D3346;
 
 $orange-lightest:#FFF3EF;
@@ -37,6 +37,7 @@ $orange-darker: #CD4722;
 
 $grey-lightest: #eef2f5;
 $grey: #F8F8F8;
+$grey-medium-dark: #58606C;
 $grey-dark: #454E6D; 
 $grey-darker: #434A53;
 
@@ -57,7 +58,7 @@ $secondary-color: $blue-dark;
 
 //links
 $link-underline-primary-color: $orange-light ;
-$link-underline-secondary-color: $grey-dark;
+$link-underline-secondary-color: $grey-medium-dark;
 $link-visited-color: $purple;
 
 //specific colors
@@ -68,15 +69,15 @@ $process-number-color: $blue-semi-light;
 $line-color: $blue-light;
 
 
-
+$max-website-width: 1390px;
 
 //font
-$font-type: 'Montserrat', Arial;
-$font-size--base: 15px;
-$font-size--caption: 0.82em;
-$font-size--small: 0.72em;
-$font-weight--medium: 500;
-$font-weight--regular: 400;
+$font-type: "raleway", sans-serif;
+$font-size--base: 16px;
+$font-size--small: 0.84em;
+$font-weight--regular: 500;
+$font-weight--medium: 600;
+$font-weight--heavy: 700;
 $line-spacing--extra: 0.14em;
 
 

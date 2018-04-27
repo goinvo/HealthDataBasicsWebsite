@@ -1,0 +1,21 @@
+.input{
+    border: 1px solid $grey-dark;
+    margin: $spacing--small $spacing--small $spacing--small 0;
+    padding: $spacing--small;
+    width: 70vw;
+    max-width: $line-limit--medium;
+
+    &--paragraph{
+        height: 20em;
+
+        @media only screen and (min-width: $break-medium-small){
+            height: 12em;
+        }
+    }
+
+}
+
+.position--up{
+    padding: $spacing--large 10vw;
+    margin-top: -5em;
+}

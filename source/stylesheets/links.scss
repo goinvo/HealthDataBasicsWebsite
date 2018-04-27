@@ -14,13 +14,14 @@
 
     &--inline {
         color: $primary-color;
+        border-bottom: none;
     }
 
     &--primary {
         text-transform: uppercase;
         font-weight: $font-weight--medium;
         letter-spacing: $line-spacing--extra;
-        font-size: $font-size--caption;
+        font-size: $font-size--small;
         color: $primary-darker-color;
 
         &:visited {
@@ -32,12 +33,27 @@
         text-transform: uppercase;
         font-weight: $font-weight--medium;
         letter-spacing: $line-spacing--extra;
-        font-size: $font-size--caption;
+        font-size: $font-size--small;
         color: $link-underline-secondary-color;
     }
 
     &.link--secondary:visited{
         color: $link-visited-color;
+    }
+
+    &--nav{  //  display: block;
+        text-align: center;
+        margin-left: 2em;
+        margin-right: 2em;
+        border-bottom: none;
+        text-decoration: none;
+        font-size: $font-size--small;
+
+        @media only screen and (min-width: $break-medium) {
+            padding: $spacing--medium;
+            margin-right: .5em;
+            margin-left: .5em;
+        }
     }
 
 }
@@ -49,4 +65,5 @@
     margin-right: $spacing--medium;
     margin-bottom: $spacing--medium;
 }
+
 

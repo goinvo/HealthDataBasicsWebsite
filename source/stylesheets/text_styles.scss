@@ -8,7 +8,7 @@ body {
 
 h1 {
     margin: 0;
-    font-weight: $font-weight--medium;
+    font-weight: $font-weight--heavy;
     font-size: 1.77em;
     line-height: 1.25em;
     color: $title-color;
@@ -25,16 +25,15 @@ h3 {
     font-weight: $font-weight--medium;
     font-size: 1.0em;
     color: $header-color;
-    margin-top: $spacing--small;
-    margin-bottom: $spacing--small;
 }
 
 h6 { // used for footer
-    font-size: $font-size--caption;
+    font-size: $font-size--small;
     font-weight: $font-weight--medium;
     letter-spacing: .075em;
     color: $footer-title-color;
     margin: 0;
+    padding-bottom: $spacing--small;
 }
 
 p {
@@ -65,50 +64,76 @@ li{
     max-width: $line-limit--medium;
 }
 
+.line-limit--large{
+    max-width: $line-limit--large;
+}
+
+
+
 .text-center {
     text-align: center;
 }
 
-.font-size--caption {
-    font-size: $font-size--caption;
+.font-size--small {
+    font-size: $font-size--small;
 }
 
+.font-weight--medium{
+    font-weight: $font-weight--medium;
+}
+
+// unique classes
 .footer--text-style {
     border-bottom: none;
-    font-style: $font-weight--regular;
     font-size: $font-size--small; 
     letter-spacing: .1em;
+    line-height: 1.25em;
     color: white;
 }
 
 .process--text-style {
     color: $process-number-color;
+    font-size: 2.5em;
+
+    @media only screen and (min-width: $break-medium-small){
+        font-size: 3.5em;
+    }
+
+    @media only screen and (min-width: $break-medium){
+        font-size: 4em;
+    }
+}
+
+.bulleted-list{
+    list-style-position: outside;
+    padding-left: $spacing--medium;
+
+    li{
+        margin-bottom: $spacing--small;
+    }
 }
 
 
-.no-spacing{
-    padding: 0;
-    margin: 0;
-}
 
-.padding-bottom{
-    padding-bottom: $spacing--medium;
-}
 
 // === Media Queries ====
 
 // very small mobile devices
 @media only screen and (max-width: $break-small){
     h1 {
-        font-size: 1.45em;
+        font-size: 1.5em;
     }
 }
 
+@media only screen and (min-width: $break-medium-small){
+    h1{
+        font-size: 2.1em;
+    }
+}
 
 @media only screen and (min-width: $break-medium){
-
     h1 {
-        font-size: 2.1em;
+        font-size: 2.0em;
     }
     h3{
         font-size: 1.2em;
@@ -117,20 +142,19 @@ li{
     p {
         max-width: $line-limit--large;
     }
-
 }
 
 
 //large
 @media only screen and (min-width: $break-large){
     h1 {
-        font-size: 2.403em;
+        font-size: 2.64em;
     }
 }
 
 
 .animate--fade{
-    -webkit-animation: fadein 3s;
+    -webkit-animation: fadein 2.5s;
     -webkit-animation-timing-function: ease-out;
     @keyframes fadein {
         from { opacity: 0; }

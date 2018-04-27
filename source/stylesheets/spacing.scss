@@ -2,12 +2,11 @@
 
 // limit width of site
 .max-website-width {
-    max-width: 1400px;
+    max-width: $max-website-width;
     margin:0 auto;
 }
 
 // reset spacing from bulma to 0
-
 .columns {
     margin: 0;
     padding: 0;
@@ -19,8 +18,6 @@
 }
 
 
-
-
 // helpers for spacing
 .full-width {
     width: 100%;
@@ -30,6 +27,8 @@
     height: 100%;
 }
 
+
+//alignment 
 .center-children {
     display: flex;
     justify-content: center;
@@ -42,17 +41,24 @@
     height: auto;
 }
 
+.inline-block{
+    display: inline-block;
+}
+
+
+//spacing 
 .top-padding--medium {
     padding-top: $spacing--medium;
 }
 
-
-
-// commonly used spacing for elements
-.spacing-object {
-    padding: $spacing--medium;
-    margin: $spacing--small;
+.padding-bottom--medium{
+    padding-bottom: $spacing--medium;
 }
+
+.spacing-section--small{
+    padding-top: $spacing--medium;
+}
+
 
 .spacing-section {
     padding-top: $spacing--large;
@@ -60,11 +66,6 @@
     @media only screen and (min-width: $break-medium) {
         padding-top: $spacing--larger;
     }
-}
-
-.spacing-section--small{
-    padding-top: $spacing--medium;
-
 }
 
 .spacing-section--large {
@@ -75,12 +76,11 @@
     }
 }
 
-
 .hero--spacing {
-    padding: 3em 0;
+    padding: 4em 0;
 
     @media only screen and (min-width: $break-medium){
-            padding: 5.5em 0;
+        padding: 5.5em 0;
     }
 }
 
@@ -89,48 +89,4 @@
 }
 
 
-//containers
-.image-size {
-      width: 100%;
-      height: auto;
-}
-
-.standard-container {
-      @extend .center-children;
-
-      height: 100%;
-}
-
-.image-container--small {
-      @extend .center-width;
-
-      display: block;
-      width: 4.2em;
-
-}
-
-.image-container--medium {
-    @extend .center-width;
-
-    display: block;
-    width: 6em;
-}
-
-.image_container--large {
-    @extend .center-width;
-
-    display: block;
-    width: 11em;
-}
-
-.inline-block{
-    display: inline-block;
-}
-
-
-//other classes
-
-.vertical-line{
-    border-right: 3px solid $line-color;
-}
 
