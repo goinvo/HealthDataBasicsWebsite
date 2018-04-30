@@ -3,6 +3,10 @@
 // links in body of text
 
 
+// to include standard (.link) class- include both: 
+// in html include both link and & class
+// example   class="link link--inline"
+
 .link {
     text-decoration: none;
     border-bottom: 0.12em solid $link-underline-primary-color;
@@ -12,11 +16,13 @@
     border-bottom: 0.2em solid $primary-darker-color;
     }
 
+    // links inside a paragraph text
     &--inline {
         color: $primary-color;
         border-bottom: none;
     }
 
+    // orange "primary" links
     &--primary {
         text-transform: uppercase;
         font-weight: $font-weight--medium;
@@ -28,7 +34,7 @@
             color: $link-visited-color;   
         }
     }
-
+    // grey secondary links 
     &--secondary {
         text-transform: uppercase;
         font-weight: $font-weight--medium;
@@ -41,12 +47,14 @@
         color: $link-visited-color;
     }
 
-    &--nav{  //  display: block;
-        text-align: center;
+    // for main navigation menu 
+    &--nav { 
         margin-left: 2em;
         margin-right: 2em;
+        text-align: center;
         border-bottom: none;
         text-decoration: none;
+        font-weight: $font-weight--medium;
         font-size: $font-size--small;
 
         @media only screen and (min-width: $break-medium) {
@@ -59,7 +67,7 @@
 }
 
 // wraps links onto new line when multiple links 
-.wrap-links{
+.wrap-links {
     display: inline;
     float: left;
     margin-right: $spacing--medium;

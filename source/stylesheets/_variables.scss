@@ -1,20 +1,19 @@
 
-//media query size
-$break-large: 1080px;
-$break-medium: 769px;
+//media query sizes
+$break-small: 360px; 
 $break-medium-small: 470px;
-$break-small: 360px;
+$break-medium: 769px;
+$break-large: 1080px;
 
 
 //standard padding 
 $spacing--small: .5rem;
 $spacing--medium: 1rem; // Used for most 
 $spacing--large: 2rem;
-$spacing--larger: 2.5rem;
+$spacing--larger: 3rem;
 $spacing--extra-large: 5.5rem;
 
 //limits
-
 $max-website-width: 1390px;
 
 $line-limit--small: 17em;
@@ -39,29 +38,29 @@ $line-height--prose: 1.6em;
 
 
 
-//colors by hue
-$blue-lightest: #F0F4FA;
-$blue-light: #EBEEF7; 
+//== colors by hue== 
+$blue-lightest: #F0F4FA;  // usually background
+$blue-light: #EBEEF7;    // usually background
 $blue-semi-light: #D8DDEC; 
 $blue-dark: #2D3346;
 
-$orange-lightest:#FFF3EF;
-$orange-light: #F39779;
+$orange-lightest:#FFF3EF; // usually background
+$orange-light: #F39779; // usually underline for links 
 $orange: #DE5B34;
 $orange-darker: #CD4722; 
 
-$grey-lightest: #eef2f5;
-$grey: #F8F8F8;
-$grey-medium-light: #D0D0D0; //used only for input 
-$grey-medium-dark: #58606C;
-$grey-dark: #454E6D; 
-$grey-darker: #434A53;
+$grey-lightest: #eef2f5; // usually background
+$grey: #F8F8F8;  // usually background
+$grey-medium-light: #D0D0D0;  
+$grey-medium-dark: #58606C; 
+$grey-dark: #454E6D;   //usually font
+$grey-darker: #434A53; //usually font
 
 $purple: #5E2A8D;
 
 
 
-//colors by use 
+//== colors by use ==
 
 //font
 $title-color: $blue-dark;

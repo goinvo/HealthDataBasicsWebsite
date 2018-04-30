@@ -1,11 +1,11 @@
 
 // ==== main nav =====
 .nav-title {
-    padding: $spacing--medium;
+    padding: $spacing--medium 0;
+    text-decoration: none;
     border-bottom:none;
     font-weight: $font-weight--medium;
     color: $body-color;
-    text-decoration: none;
 }
 
 
@@ -15,11 +15,13 @@
     font-weight: $font-weight--medium;
 }
 
+// creates container for header 
+// doubles in size on mobile, halves in size on desktop
 .header-shadow {
     position: relative;
+    z-index: 200;
     width: 100%;
     height: 5.5em;
-    z-index: 200;
     background-color: white;
     box-shadow: 0 .1em .2em #E8E8E8;
 
@@ -36,7 +38,7 @@
     right: $spacing--medium;
     margin-right: 0em;
 
-    @media only screen and (min-width: $break-medium){
+    @media only screen and (min-width: $break-medium) {
         position: static;
         top: 0;
         right: 0;
@@ -45,35 +47,35 @@
 }
 
 
-// Aligns nav right when in desktop. Centers  nav in mobile
+//  Centers  navigation links in mobile. Aligns navigation links right when in desktop.
 .nav--align-right {
      display:flex;
      align-items: center;
      justify-content: center;
      padding-top: $spacing--small;
 
-     @media only screen and (min-width: $break-medium){
+     @media only screen and (min-width: $break-medium) {
         justify-content: flex-end;
         padding-top: 0;
      }
 }
 
-// Centers in mid range sizes and normal size mobile devices. Aligns title left when in desktop or very small screen sizes.
+// Centers title "health data basics " to far left on very small mobile screens, 
+//center's on medium size mobile screens and places on left again on desktop 
 .title--left-align {
      display:flex;
      align-items: center;
-     justify-content: center;
+     justify-content: flex-start;
      border-bottom: .05em solid #D3D3D3; // line dividing nav bar from title
      margin: 0 $spacing--medium;
 
-     // align title to left on VERY small screens ( base is for nomal mobile)
-     @media only screen and (max-width: $break-small) {
-     justify-content: flex-start;
+     @media only screen and (min-width: $break-small) {
+        justify-content: center;
     }
 
     @media only screen and (min-width: $break-medium) {
     justify-content: flex-start;
-    border-bottom: none; // removes line dividing nav bar from title
+    border-bottom: none; 
     }
 }
 
@@ -81,13 +83,14 @@
 
 .button {
     padding: .4em .8em;
-    background-color: $primary-color;
     text-decoration: none;  
     border: none;
     border-radius: .75em;
-    font-size: $font-size--small;
     text-align: center;
+    background-color: $primary-color;
+    font-weight: $font-weight--medium;
     line-height: 1;
+    font-size: $font-size--small;
     letter-spacing: $line-spacing--extra;
     color: white;
 }

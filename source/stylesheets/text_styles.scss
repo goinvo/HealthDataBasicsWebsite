@@ -8,6 +8,7 @@ body {
 
 h1 {
     margin: 0;
+    margin-top: $spacing--small;
     font-weight: $font-weight--heavy;
     font-size: 1.77em;
     line-height: 1.25em;
@@ -22,32 +23,33 @@ h2 {
 }
 
 h3 {
+    margin: 0;
     font-weight: $font-weight--medium;
-    font-size: 1.0em;
     color: $header-color;
 }
 
 h6 { // used for footer
+    margin: 0;
+    padding-bottom: $spacing--small;
     font-size: $font-size--small;
     font-weight: $font-weight--medium;
     letter-spacing: .075em;
     color: $footer-title-color;
-    margin: 0;
-    padding-bottom: $spacing--small;
 }
 
 p {
     max-width: $line-limit--medium;
-    font-size: 1.0em;
     font-weight: $font-weight--regular;
     line-height: 1.4em;
     color: $body-color;
 }
 
-li{
+li {
     @extend p;
 }
 
+
+//limits
 .line-height--prose {
     line-height: $line-height--prose;
 }
@@ -60,12 +62,12 @@ li{
     max-width: $line-limit--medium;
 }
 
-.line-limit--large{
+.line-limit--large {
     max-width: $line-limit--large;
 }
 
 
-
+//font modifiers 
 .text-center {
     text-align: center;
 }
@@ -74,9 +76,19 @@ li{
     font-size: $font-size--small;
 }
 
-.font-weight--medium{
+.font-weight--medium {
     font-weight: $font-weight--medium;
 }
+
+.animate--fade {
+    -webkit-animation: fadein 2.5s;
+    -webkit-animation-timing-function: ease-out;
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+}
+
 
 // unique classes
 .footer--text-style {
@@ -87,24 +99,26 @@ li{
     color: white;
 }
 
+//used on numbers for process section
 .process--text-style {
     color: $process-number-color;
     font-size: 2.5em;
 
-    @media only screen and (min-width: $break-medium-small){
-        font-size: 3.5em;
+    @media only screen and (min-width: $break-medium-small) {
+        font-size: 3em;
     }
 
-    @media only screen and (min-width: $break-medium){
+    @media only screen and (min-width: $break-large) {
         font-size: 4em;
     }
 }
 
-.bulleted-list{
+//applied to "process on homepage"
+.bulleted-list {
     list-style-position: outside;
     padding-left: $spacing--medium;
 
-    li{
+    li {
         margin-bottom: $spacing--small;
     }
 }
@@ -114,24 +128,26 @@ li{
 
 // === Media Queries ====
 
+
 // very small mobile devices
-@media only screen and (max-width: $break-small){
+@media only screen and (max-width: $break-small) {
     h1 {
         font-size: 1.5em;
     }
 }
 
-@media only screen and (min-width: $break-medium-small){
-    h1{
-        font-size: 2.1em;
+@media only screen and (min-width: $break-medium-small) {
+    h1 {
+        font-size: 2.2em;
     }
 }
 
-@media only screen and (min-width: $break-medium){
-    h1 {
-        font-size: 2.0em;
+@media only screen and (min-width: $break-medium) {
+    h2 {
+        font-size: 1.5em;
     }
-    h3{
+
+    h3 {
         font-size: 1.2em;
     }
 
@@ -140,20 +156,9 @@ li{
     }
 }
 
-
-//large
-@media only screen and (min-width: $break-large){
+@media only screen and (min-width: $break-large) {
     h1 {
-        font-size: 2.64em;
+        font-size: 3.01em;
     }
 }
 
-
-.animate--fade{
-    -webkit-animation: fadein 2.5s;
-    -webkit-animation-timing-function: ease-out;
-    @keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-    }
-}

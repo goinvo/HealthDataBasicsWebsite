@@ -8,10 +8,12 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 0 $spacing--medium;
 
     @media only screen and (min-width: $break-medium) {
        text-align: left;
        justify-content: flex-start;
+       padding: 0;
     }
 }
 
@@ -26,16 +28,16 @@
 }
 
 //compensates for margins
-.margin-right--small{
+.margin-right--small {
 
-    @media only screen and (min-width: $break-medium){
+    @media only screen and (min-width: $break-medium) {
         margin-right: $spacing--small;
     }
 }
 
 
-.spacing-hero-homepage{
-    padding-top: $spacing--medium;
+.spacing-hero-homepage {
+    padding-top: $spacing--large;
 
     @media only screen and (min-width: $break-medium) {
         padding-top: 0em;
