@@ -1,6 +1,6 @@
 
 //media query sizes
-$break-small: 360px; 
+$break-small: 380px; 
 $break-medium-small: 470px;
 $break-medium: 769px;
 $break-large: 1080px;
@@ -21,13 +21,13 @@ $line-limit--medium: 30em;
 $line-limit--large: 39em;
 
 //font
-$font-type: "raleway", sans-serif;
+$font-type: 'Montserrat', times;
 
 $font-size--base: 16px;
-$font-size--small: 0.86em;
-$font-weight--regular: 500;
-$font-weight--medium: 600;
-$font-weight--heavy: 700;
+$font-size--small: 0.9em;
+$font-weight--regular: 400;
+$font-weight--medium: 500;
+$font-weight--heavy: 600;
 
 $line-spacing--extra: 0.14em;
 $letter-spacing: 0.025em;
@@ -52,9 +52,9 @@ $orange-darker: #CD4722;
 $grey-lightest: #eef2f5; // usually background
 $grey: #F8F8F8;  // usually background
 $grey-medium-light: #D0D0D0;  
-$grey-medium-dark: #58606C; 
-$grey-dark: #454E6D;   //usually font
-$grey-darker: #434A53; //usually font
+$grey-medium-dark: #454E6D; 
+$grey-dark: #575D71;   //usually font
+$grey-darker: #374058; //usually font
 
 $purple: #5E2A8D;
 
@@ -72,8 +72,7 @@ $primary-darker-color: $orange-darker;
 $secondary-color: $blue-dark;
 
 //links
-$link-underline-primary-color: $orange-light ;
-$link-underline-secondary-color: $grey-medium-dark;
+$link-underline-color: $orange-light ;
 $link-visited-color: $purple;
 
 //specific colors

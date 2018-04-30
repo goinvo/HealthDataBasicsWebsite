@@ -9,7 +9,7 @@
 
 .link {
     text-decoration: none;
-    border-bottom: 0.12em solid $link-underline-primary-color;
+    border-bottom: 0.12em solid $link-underline-color;
     color: $body-color;
 
     &:not(.no-hover):hover {
@@ -40,7 +40,7 @@
         font-weight: $font-weight--medium;
         letter-spacing: $line-spacing--extra;
         font-size: $font-size--small;
-        color: $link-underline-secondary-color;
+        color: $grey-medium-dark;
     }
 
     &.link--secondary:visited{
@@ -54,7 +54,6 @@
         text-align: center;
         border-bottom: none;
         text-decoration: none;
-        font-weight: $font-weight--medium;
         font-size: $font-size--small;
 
         @media only screen and (min-width: $break-medium) {
@@ -70,7 +69,7 @@
 .wrap-links {
     display: inline;
     float: left;
-    margin-right: $spacing--medium;
+    margin-right: $spacing--large;
     margin-bottom: $spacing--medium;
 }
 
