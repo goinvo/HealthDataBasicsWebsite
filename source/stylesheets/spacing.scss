@@ -106,9 +106,13 @@
     }
 }
 
-.footer--spacing {
-    padding: $spacing--medium $spacing--large $spacing--large;
+//specific for footers 
+.spacing--footer-container {
+    padding: $spacing--large 0 $spacing--larger 0;
 }
+
+
+
 
 
 
