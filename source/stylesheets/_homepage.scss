@@ -19,7 +19,6 @@
 
 .video-size {
     height: 100%;
-    margin-right: $spacing--small;
 
     // resizes around medium size screen to prevent large video
      @media only screen and (max-width: $break-medium) and (min-width: $break-medium-small) {
