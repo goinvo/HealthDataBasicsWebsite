@@ -1545,9 +1545,6 @@ body {
   font-size: 16px;
   letter-spacing: 0.025em; }
 
-* {
-  -webkit-font-smoothing: antialiased; }
-
 h1 {
   margin: 0;
   margin-top: 0.5rem;
