@@ -1,0 +1,18 @@
+.full-width {
+  width: 100%; }
+
+.full-height {
+  height: 100%; }
+
+.center-children {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.center-width {
+  margin-left: auto;
+  margin-right: auto;
+  height: auto; }
+
+.inline-block {
+  display: inline-block; }
