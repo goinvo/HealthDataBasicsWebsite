@@ -1,0 +1,77 @@
+//==== links =====
+
+// links in body of text
+
+
+// to include standard (.link) class- include both: 
+// in html include both link and & class
+// example   class="link link--inline"
+
+.link {
+    text-decoration: none;
+    border-bottom: 0.12em solid $link-underline-color;
+    color: $body-color;
+    font-weight: $font-weight--medium;
+
+    &:not(.no-hover):hover {
+    border-bottom: 0.2em solid $primary-darker-color;
+    }
+
+    // links inside a paragraph text
+    &--inline {
+        color: $primary-color;
+        border-bottom: none;
+    }
+
+    // orange "primary" links
+    &--primary {
+        text-transform: uppercase;
+        font-weight: $font-weight--medium;
+        letter-spacing: $line-spacing--extra;
+        font-size: $font-size--small;
+        color: $primary-darker-color;
+
+        &:visited {
+            color: $link-visited-color;   
+        }
+    }
+    // grey secondary links 
+    &--secondary {
+        text-transform: uppercase;
+        font-weight: $font-weight--medium;
+        letter-spacing: $line-spacing--extra;
+        font-size: $font-size--small;
+        color: $grey-medium-dark;
+    }
+
+    &.link--secondary:visited{
+        color: $link-visited-color;
+    }
+
+    // for main navigation menu 
+    &--nav { 
+        margin-left: 2em;
+        margin-right: 2em;
+        text-align: center;
+        border-bottom: none;
+        text-decoration: none;
+        font-size: $font-size--small;
+
+        @media only screen and (min-width: $break-medium) {
+            padding: $spacing--medium;
+            margin-right: .5em;
+            margin-left: .5em;
+        }
+    }
+
+}
+
+// wraps links onto new line when multiple links 
+.wrap-links {
+    display: inline;
+    float: left;
+    margin-right: $spacing--large;
+    margin-bottom: $spacing--medium;
+}
+
+

@@ -1,0 +1,26 @@
+
+//stylizes input fields
+.input {
+    width: 70vw;
+    max-width: $line-limit--medium;
+    margin: $spacing--small $spacing--small $spacing--small 0;
+    padding: $spacing--small;
+    border: .1em solid $border-input;
+    border-radius: .2em;
+
+    &--paragraph {
+        height: 20em;
+
+        @media only screen and (min-width: $break-medium-small){
+            height: 12em;
+        }
+    }
+
+}
+
+// moves contact form to overlap header and sytlizes size of white container
+.position--up {
+    border-radius: .2em;
+    padding: $spacing--large 16vw;
+    margin-top: -5em;
+}

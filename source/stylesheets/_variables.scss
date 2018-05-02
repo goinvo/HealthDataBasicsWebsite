@@ -1,138 +1,86 @@
 
-//media query size
-$break-large: 960px;
-$break-medium: 769px;
+//media query sizes
+$break-small: 380px; 
 $break-medium-small: 470px;
-$break-small: 350px;
+$break-medium: 769px;
+$break-large: 1080px;
 
-// color
-$lightest-neutral-color: #F5F7FA; 
-$light-neutral-color: #EFF1F8;  
-$contrast-neutral-color: #FFF3EF; 
-$dark-color: #2D3346;
-$emphasis-color-strong: #CD4722; 
-$emphasis-color-medium: #DE5B34;
-$text-color-dark: #434A53;
-$text-color-lighter: #454E6D;
-$link-underline: #F39779;
-$link-color-secondary: #58606C;
-$visited-link: #4F2478;
-$footer-title-color: #BDC5DD;
-
-//font
-$font-type: 'Montserrat', Arial;
-$base-font-size: 15px;
-$medium-weight: 500;
-$regular-weight: 400;
-$subhead-size: 0.82em;
-$footer-text-size: 0.72em;
-$caps-spacing: 0.14em;
 
 //standard padding 
-$small-padding: .5rem;
-$medium-padding: 1rem; // Used for most 
-$large-padding: 2rem;
-$larger-padding: 2.5rem;
-$extra-large-padding: 5rem;
+$spacing--small: .5rem;
+$spacing--medium: 1rem; // Used for most 
+$spacing--large: 2rem;
+$spacing--larger: 3rem;
+$spacing--extra-large: 5.5rem;
 
-//line limits
-$line-limit-desktop: 40em;
-$line-limit-mobile: 33em;
+//limits
+$max-website-width: 1390px;
+
+$line-limit--small: 17em;
+$line-limit--medium: 30em;
+$line-limit--large: 39em;
+
+//font
+$font-type: 'Montserrat', times;
+
+$font-size--base: 16px;
+$font-size--small: 0.9em;
+$font-weight--regular: 400;
+$font-weight--medium: 500;
+$font-weight--heavy: 600;
+
+$line-spacing--extra: 0.14em;
 $letter-spacing: 0.025em;
-
-*{
-	margin: 0;
-	padding: 0;
-	font-family: $font-type;
-	font-size: $base-font-size;
-	letter-spacing: $letter-spacing;
-}
-
-//=== fonts ====
-
-h1{
-	font-weight: $medium-weight;
-	font-size: 1.76em;
-	color: $emphasis-color-medium;
-	line-height: 1.2em;
-
-}
-
-h2{
-	font-weight: $medium-weight;
-	font-size: 1.25em;
-	color: $emphasis-color-medium;
-	line-height: 1.25em;
-
-}
-
-h3{
-	padding-top: $medium-padding;
-	font-weight: $medium-weight;
-	font-size: 1.0em;
-	color: $text-color-dark;
-
-}
-h6{ // used for footer
-	font-size: $subhead-size;
-	font-weight: $medium-weight;
-	color: $footer-title-color;
-	letter-spacing: .075em;
-}
-
-p{
- 	font-size: 1.0em;
- 	color: $text-color-lighter;
- 	font-weight: $regular-weight;
-	line-height: 1.4em;
-	max-width: $line-limit-mobile;
-	padding-top: $small-padding;
-	padding-bottom: $small-padding;
-}
+$line-height--prose: 1.6em;
 
 
-a{
-	text-decoration: none;
-	color: $text-color-lighter;
-	border-bottom: 0.12em solid $link-underline;
-}
-
-img{
-	width: 100%;
-	height: auto;
-}
 
 
-// === Media Queries ====
-
-@media only screen and (min-width: $break-medium){
 
 
-	h1{
-		font-size: 1.60em;
-	}
+//== colors by hue== 
+$blue-lightest: #F0F4FA;  // usually background
+$blue-light: #EBEEF7;    // usually background
+$blue-semi-light: #D8DDEC; 
+$blue-dark: #2D3346;
 
-	h2{
-		font-size: 1.25em;
-	}
-	p{
-		max-width: $line-limit-desktop;
-	}
+$orange-lightest:#FFF3EF; // usually background
+$orange-light: #F39779; // usually underline for links 
+$orange: #DE5B34;
+$orange-darker: #CD4722; 
 
-}
+$grey-lightest: #eef2f5; // usually background
+$grey: #F8F8F8;  // usually background
+$grey-medium-light: #D0D0D0;  
+$grey-medium-dark: #454E6D; 
+$grey-dark: #575D71;   //usually font
+$grey-darker: #374058; //usually font
+
+$purple: #5E2A8D;
 
 
-//large
-@media only screen and (min-width: $break-large){
-	h1{
-		font-size: 2.403em;
-	}
-}
 
-//small mobile devices
-@media only screen and (max-width: $break-small){
-	h1{
-		font-size: 1.4em;
-	}
+//== colors by use ==
 
-}
+//font
+$title-color: $blue-dark;
+$header-color: $grey-darker;
+$body-color: $grey-dark;
+
+$primary-color: $orange;
+$primary-darker-color: $orange-darker;
+$secondary-color: $blue-dark;
+
+//links
+$link-underline-color: $orange-light ;
+$link-visited-color: $purple;
+
+//specific colors
+$footer-title-color: $blue-semi-light;
+$video-background-color: $grey-lightest;
+$beyond-max-width-color: $grey;
+$process-number-color: $blue-semi-light;
+$border-input: $grey-medium-light;
+
+
+

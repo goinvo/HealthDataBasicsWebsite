@@ -1,210 +1,103 @@
 
 // ==== main nav =====
-.nav-title{
-	color: $text-color-lighter;
-	font-weight: $medium-weight;
-	border-bottom: none;
-	padding: $medium-padding;
-}
-
-ul{
-	list-style-type: none;
-    @extend .center-object;
-}
-
-li {
-	float: left;
-}
-
-li a {
-    display: block;
-    text-align: center;
-    padding-left: 2.3em;
-    padding-right: 2.3em;
+.nav-title {
+    padding: $spacing--medium 0;
     text-decoration: none;
-    border-bottom: none;
-    font-size: $subhead-size;
+    border-bottom:none;
+    font-weight: $font-weight--medium;
+    color: $body-color;
 }
+
 
 // selected navigation bar element 
-.active {
- 	color: $emphasis_color-medium;
- 	font-weight: $medium-weight;
-
+.nav--is-active {
+    color: $primary-color;
+    font-weight: $font-weight--medium;
 }
 
-.header-shadow{
-	box-shadow: 0 .1em .2em #E8E8E8;
-	width: 100%;
-	height: 5em;
-	property: float;
-	z-index: 200;
-	background-color: white;
-	position: relative;
-}
+// creates container for header 
+// doubles in size on mobile, halves in size on desktop
+.header-shadow {
+    position: relative;
+    z-index: 200;
+    width: 100%;
+    height: 5.5em;
+    background-color: white;
+    box-shadow: 0 .1em .2em #E8E8E8;
 
-.white-text{
-	color:white;
+    @media only screen and (min-width: $break-medium) {
+        height: 3.2em;
+    }
+
 }
 
 // moves orange button into upper nav bar on mobile
-.position-button{
-	position: absolute;
-	top: 1em;
-	right: $medium-padding;
-	}
+.position-button {
+    position: absolute;
+    top: .8em;
+    right: $spacing--medium;
+    margin-right: 0em;
 
-
-// Aligns nav right when in desktop. Centers  nav in mobile
-.align-nav-right{
-	 display:flex;
-	 align-items: center;
-	 justify-content: center;
+    @media only screen and (min-width: $break-medium) {
+        position: static;
+        top: 0;
+        right: 0;
+        margin-right: $spacing--medium;
+    }
 }
 
-// Aligns title left when in desktop or very small screen sizes. Centers in mid range sizes
-.align-title-left{
-	 display:flex;
-	 align-items: center;
-	 justify-content: center;
+
+//  Centers  navigation links in mobile. Aligns navigation links right when in desktop.
+.nav--align-right {
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     padding-top: $spacing--small;
+
+     @media only screen and (min-width: $break-medium) {
+        justify-content: flex-end;
+        padding-top: 0;
+     }
 }
 
-.line{
-	height: .05em;
-	width: 90vw;
-	background-color:#D3D3D3;
-	position: absolute; 
-	left: 0;
-	right: 0;
-	top: 2.85em;
-	margin: auto;
-}
+// Centers title "health data basics " to far left on very small mobile screens, 
+//center's on medium size mobile screens and places on left again on desktop 
+.title--left-align {
+     display:flex;
+     align-items: center;
+     justify-content: flex-start;
+     border-bottom: .05em solid #D3D3D3; // line dividing nav bar from title
+     margin: 0 $spacing--medium;
 
+     @media only screen and (min-width: $break-small) {
+        justify-content: center;
+    }
+
+    @media only screen and (min-width: $break-medium) {
+    justify-content: flex-start;
+    border-bottom: none; 
+    }
+}
 
 
 
 .button {
-	font-weight: $regular-weight;
-	background-color: $emphasis-color-medium;
-	text-align: center;
-	color: white;
-	border: none;
-	padding: .3em .6em;
-	font-size: $subhead-size;
-	border-radius: .75em;
-	letter-spacing: $caps-spacing;
+    padding: .45em .7em;
+    text-decoration: none;  
+    border: none;
+    border-radius: .75em;
+    text-align: center;
+    background-color: $primary-color;
+    line-height: 1;
+    font-size: $font-size--small;
+    letter-spacing: $line-spacing--extra;
+    color: white;
 }
 
-.button:hover{
-	background-color: $emphasis-color-strong;
-}
-
-
-//==== links =====
-
-// links in body of text
-a.inline{
-	color: $emphasis-color-medium;
-}
- 
-
-a:not(.no-hover):hover{
-	border-bottom: 0.2em solid $emphasis-color-strong;
-}
-
- // orange links
-a.primary{ 
-	color: $emphasis-color-strong;
-	text-transform: uppercase;
-	font-weight: $medium-weight;
-	letter-spacing: $caps-spacing;
-	font-size: $subhead-size;
-}
-
-a.primary:visited{
-	color: $visited-link;
-}
-
-a.secondary{ // grey links 
-	color: $link-color-secondary;
-	text-transform: uppercase;
-	font-weight: $medium-weight;
-	letter-spacing: $caps-spacing;
-	font-size: $subhead-size;
-}
-
-a.secondary:visited{
-	color: $visited-link;
+.button:hover {
+    background-color: $primary-darker-color;
 }
 
 
 
 
-// === footer ===
-
-.footer-background-color{
-	background-color: $dark-color;
-}
-
-footer a {
-	color: white;
-	font-style: $regular-weight;
-	font-size: $footer-text-size; 
-	border-bottom: none;
-	letter-spacing: .1em;
-}
-
-.white-text{
-	color:white;
-}
-
-
-
-
-
-@media only screen and (max-width: $break-small) {
-
-	// align title to left on very small screen
-	.align-title-left{
-	 display:flex;
-	 align-items: center;
-	 justify-content: flex-start;
-	}
-
-}
-
-
-@media only screen and (min-width: $break-medium){
-
-	.header-shadow{
-		height: 51px;
-	}
-	
-	li a {
-	 padding: $medium-padding;
-	}
-
-	.position-button{
-		position: static;
-		top: 0;
-		right: 0;
-		margin-right:$medium-padding;
-	}
-
-	.line{
-		visibility: hidden;
-	}
-
-	.align-title-left{
-		 justify-content: flex-start;
-	}
-
-	.align-nav-right{
-	 justify-content: flex-end;
-	}
-	
-
-	.ul{
-		justify-content: flex-end;
-	}
-}

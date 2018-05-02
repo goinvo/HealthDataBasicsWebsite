@@ -1,0 +1,52 @@
+
+//containers
+
+
+//most commonly used 
+.image-size {
+    width: 100%;
+    height: auto;
+}
+
+//currently only used on "process for homepage"
+.image-size--medium {
+    width: 100%;
+    height: auto;
+
+    @media only screen and (min-width: $break-medium){
+        width: 70%;
+        height: auto;
+    }
+}
+
+
+
+//* note the extend extend center children which centers the nested object
+.standard-container {
+    @extend .center-children;
+
+    height: 100%;
+}
+
+// often used with icons 
+.image-container--small {
+    @extend .center-width;
+
+    display: block;
+    width: 4.2em;
+}
+
+// often used with icons 
+.image-container--medium {
+    @extend .center-width;
+
+    display: block;
+    width: 5.7em;
+}
+
+.image-container--large {
+    @extend .center-width;
+
+    width: 11em;
+}
+

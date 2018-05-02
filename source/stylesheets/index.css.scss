@@ -1,8 +1,16 @@
 // Vendor
 @import "bulma/sass/utilities/all";
 @import "bulma/sass/grid/columns";
+@import "normalize";
 
 // App
 @import "variables";
+@import "links";
+@import "text_styles";
+@import "colors";
+@import "alignment";
+@import "spacing";
+@import "containers";
 @import "navigation";
 @import "homepage";
+@import "contact";

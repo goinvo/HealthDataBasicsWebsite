@@ -1,0 +1,164 @@
+body {
+    font-family: $font-type;
+    font-size: $font-size--base;
+    letter-spacing: $letter-spacing;
+}
+
+
+* {-webkit-font-smoothing: antialiased;}
+//=== fonts ====
+
+h1 {
+    margin: 0;
+    margin-top: $spacing--small;
+    font-weight: $font-weight--heavy;
+    font-size: 1.5em;
+    line-height: 1.25em;
+    color: $title-color;
+}
+
+h2 {
+    font-weight: $font-weight--medium;
+    font-size: 1.33em;
+    line-height: 1.25em;
+    color: $primary-color;
+}
+
+h3 {
+    margin: 0;
+    font-weight: $font-weight--medium;
+    color: $header-color;
+}
+
+h6 { // used for footer
+    margin: 0;
+    padding-bottom: $spacing--small;
+    font-size: $font-size--small;
+    font-weight: $font-weight--medium;
+    letter-spacing: .075em;
+    color: $footer-title-color;
+}
+
+p {
+    max-width: $line-limit--medium;
+    font-weight: $font-weight--regular;
+    line-height: 1.4em;
+    color: $body-color;
+}
+
+li {
+    @extend p;
+}
+
+
+//limits
+.line-height--prose {
+    line-height: $line-height--prose;
+}
+
+.line-limit--small {
+    max-width: $line-limit--small;
+}
+
+.line-limit--medium {
+    max-width: $line-limit--medium;
+}
+
+.line-limit--large {
+    max-width: $line-limit--large;
+}
+
+
+//font modifiers 
+.text-center {
+    text-align: center;
+}
+
+.font-size--small {
+    font-size: $font-size--small;
+}
+
+.font-weight--medium {
+    font-weight: $font-weight--medium;
+}
+
+.animate--fade {
+    -webkit-animation: fadein 2.5s;
+    -webkit-animation-timing-function: ease-out;
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+}
+
+
+// unique classes
+.footer--text-style {
+    border-bottom: none;
+    font-size: $font-size--small; 
+    letter-spacing: .1em;
+    line-height: 1.25em;
+    color: white;
+}
+
+//used on numbers for process section
+.process--text-style {
+    color: $process-number-color;
+    font-size: 2.5em;
+
+    @media only screen and (min-width: $break-medium-small) {
+        font-size: 3em;
+    }
+
+    @media only screen and (min-width: $break-large) {
+        font-size: 4em;
+    }
+}
+
+//applied to "process on homepage"
+.bulleted-list {
+    list-style-position: outside;
+    padding-left: $spacing--medium;
+
+    li {
+        margin-bottom: $spacing--small;
+    }
+}
+
+
+
+
+
+
+// === Media Queries ====
+
+
+@media only screen and (min-width: $break-small) {
+    h1 {
+        font-size: 1.77em;
+    }
+}
+
+@media only screen and (min-width: $break-medium-small) {
+    h1 {
+        font-size: 2.2em;
+    }
+}
+
+@media only screen and (min-width: $break-medium) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+
+    p {
+        max-width: $line-limit--large;
+    }
+}
+
+@media only screen and (min-width: $break-large) {
+    h1 {
+        font-size: 2.7em;
+    }
+}
+

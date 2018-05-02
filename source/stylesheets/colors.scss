@@ -1,0 +1,41 @@
+//==== Colors ===
+
+.background {
+
+    &--white {
+        background-color: white;
+    }
+    &--grey {
+        background-color: $beyond-max-width-color;
+    }
+    &--light {
+        background-color: $blue-light;
+    }
+    &--lightest {
+        background-color: $blue-lightest;
+    }
+    &--contrast {
+        background-color: $orange-lightest;
+    }
+    &--dark {
+        background-color: $blue-dark;
+    }
+    &--video {
+        background-color: $video-background-color;
+    }
+    &--title-gradient {
+        @media only screen and (min-width: $break-medium) {
+            background: linear-gradient(90deg, rgba(240,244,250,1) 0%, rgba(255,255,255,1) 18%);
+        }
+    }
+
+}
+
+.text-color {
+    &--contrast {
+        color: $primary-color;
+    }
+    &--white {
+        color: $white;
+    }
+}

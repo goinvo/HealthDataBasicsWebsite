@@ -1,0 +1,118 @@
+// === spacing and alignment ====
+
+// limit width of site
+.max-website-width {
+    max-width: $max-website-width;
+    margin: 0 auto;
+}
+
+// reset spacing from bulma to 0
+.columns {
+    margin: 0;
+    padding: 0;
+}
+
+.column {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+// removes spacing from list 
+.list--unstyled {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+//spacing 
+.padding-top--medium {
+    padding-top: $spacing--medium;
+}
+
+.padding-bottom--medium {
+    padding-bottom: $spacing--medium;
+}
+
+
+// used to add column spacing between rows of halves and third grids, but have no spacings on sides of page
+// Reason for media query is because single column in mobile doesn't need spacing between single column
+.margin-right--small {
+    @media only screen and (min-width: $break-medium){
+        margin-right: $spacing--small;
+    }
+}
+
+.margin-left--small {
+    @media only screen and (min-width: $break-medium){
+        margin-left: $spacing--small;
+    }
+}
+
+.margin-sides--small {
+    @media only screen and (min-width: $break-medium){
+        margin: 0 .25em;
+    }
+}
+
+
+
+
+// used for most objects 
+.spacing-object {
+    padding: $spacing--medium;
+    margin: $spacing--small;
+}
+
+// only adds left and right spacing 
+.spacing-object-sides--medium {
+    padding: 0 $spacing--medium;
+    margin:  0 $spacing--small;
+}
+
+
+
+//adds spacing on top for section breaks 
+.spacing-section--small {
+    padding-top: $spacing--medium;
+}
+
+
+.spacing-section {
+    padding-top: $spacing--large;
+
+    @media only screen and (min-width: $break-medium) {
+        padding-top: $spacing--larger;
+    }
+}
+
+.spacing-section--large {
+    padding-top: $spacing--larger;
+
+    @media only screen and (min-width: $break-medium) {
+        padding-top: $spacing--extra-large;
+    }
+}
+
+// creates hero banner size 
+.hero--spacing {
+    padding: 4em 0;
+
+    @media only screen and (min-width: $break-medium) {
+        padding: 5.75em 0;
+    }
+}
+
+//specific for footers 
+.spacing--footer-container {
+    padding: $spacing--large 0 $spacing--larger 0;
+}
+
+
+
+
+
+
