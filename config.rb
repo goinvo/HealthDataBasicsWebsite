@@ -20,6 +20,8 @@ page '/*.txt', layout: false
 
 set :css_dir, 'stylesheets'
 
+set :relative_links, true
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
@@ -47,10 +49,12 @@ set :css_dir, 'stylesheets'
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+  activate :asset_hash, ignore: ['*.mp4', '*.webm']
+  activate :relative_assets
+end
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git
