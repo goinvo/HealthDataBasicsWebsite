@@ -51,3 +51,8 @@ set :css_dir, 'stylesheets'
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.build_before = true
+end
