@@ -39,6 +39,7 @@ h6 { // used for footer
 }
 
 p {
+    margin: $spacing--small 0 $spacing--small 0;
     max-width: $line-limit--medium;
     font-weight: $font-weight--regular;
     line-height: 1.4em;
@@ -47,6 +48,11 @@ p {
 
 li {
     @extend p;
+}
+
+.caption {
+    font-size: $font-size--small;
+    color: $caption-color;
 }
 
 
@@ -93,6 +99,7 @@ li {
 
 // unique classes
 .footer--text-style {
+    margin: 0;
     border-bottom: none;
     font-size: $font-size--small; 
     letter-spacing: .1em;
