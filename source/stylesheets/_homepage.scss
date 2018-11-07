@@ -13,16 +13,7 @@
     @media only screen and (min-width: $break-medium) {
        text-align: left;
        justify-content: flex-start;
-       padding: 0;
-    }
-}
-
-.video-size {
-    height: 100%;
-
-    // resizes around medium size screen to prevent large video
-     @media only screen and (max-width: $break-medium) and (min-width: $break-medium-small) {
-        height: 75vh;
+       padding: 0 1.5em;
     }
 }
 
